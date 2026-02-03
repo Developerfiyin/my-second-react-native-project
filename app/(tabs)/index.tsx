@@ -1,5 +1,12 @@
+import Fontisto from "@expo/vector-icons/Fontisto";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import {
+  ImageBackground,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
 
 export default function Index() {
   return (
@@ -16,6 +23,20 @@ export default function Index() {
             color="black"
             style={styles.icons}
           />
+        </View>
+
+        <View>
+          <View style={styles.view2}>
+            <TextInput placeholder="Search dishes..." style={styles.input} />
+
+            <Fontisto
+              name="search"
+              size={30}
+              color="black"
+              style={styles.icons}
+            />
+            <Ionicons name="options-outline" size={24} color="black" />
+          </View>
         </View>
       </ImageBackground>
 
@@ -45,6 +66,9 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     flexDirection: "row",
+  },
+  input: {
+    backgroundColor: "white",
   },
 
   icons: {
