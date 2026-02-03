@@ -35,7 +35,7 @@ export default function Index() {
 
           {/* Notification icon (outside input) */}
           <Pressable style={styles.iconButton}>
-            <Ionicons name="notifications-outline" size={22} />
+            <Ionicons name="options-outline" size={22} />
           </Pressable>
         </View>
       </ImageBackground>
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   },
   view1: {
     width: "100%",
-    height: 200,
+    height: "50%",
     borderRadius: 10,
     backgroundColor: "rgba(2, 5, 48, 0.94)",
   },
@@ -72,25 +72,27 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 9,
     borderRadius: 10,
-    marginLeft: "30%",
+    marginLeft: "35%",
     marginTop: "10%",
     alignContent: "center",
   },
 
   wrapper: {
     flexDirection: "row",
+    marginTop: 20,
     alignItems: "center",
     paddingHorizontal: 16,
     gap: 12,
   },
 
   inputContainer: {
-    flex: 1, // 👈 takes remaining width
+    flex: 1, // takes remaining width
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: "#F3F4F6",
     borderRadius: 12,
     paddingHorizontal: 12,
+
     height: 48,
   },
 
