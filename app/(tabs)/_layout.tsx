@@ -1,14 +1,14 @@
 import AntDesign from "@expo/vector-icons/AntDesign";
+import Entypo from "@expo/vector-icons/Entypo";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import Feather from "@expo/vector-icons/Feather";
-import SimpleLineIcons from "@expo/vector-icons/SimpleLineIcons";
 import { Tabs } from "expo-router";
 
 export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarInactiveTintColor: "darkgray",
+        tabBarInactiveTintColor: "gray",
         tabBarStyle: {
           backgroundColor: "white",
           height: 110,
@@ -23,11 +23,12 @@ export default function TabsLayout() {
           title: "Home",
           tabBarIcon: ({ color, focused }) => {
             return focused ? (
-              <Feather name="home" size={35} color="darkgrey" />
+              <Feather name="home" size={30} color="darkgrey" />
             ) : (
-              <AntDesign name="home" size={35} color="black" />
+              <AntDesign name="home" size={30} color="black" />
             );
           },
+          tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },
         }}
       />
       <Tabs.Screen
@@ -36,12 +37,12 @@ export default function TabsLayout() {
           title: "Map",
           tabBarIcon: ({ color, focused }) => {
             return focused ? (
-              <SimpleLineIcons name="location-pin" size={24} color="darkgrey" />
+              <Entypo name="location-pin" size={30} color="darkgrey" />
             ) : (
-              <EvilIcons name="location" size={35} color="black" />
+              <EvilIcons name="location" size={30} color="black" />
             );
           },
-          tabBarLabelStyle: { fontSize: 14, color: "black" },
+          tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },
         }}
       />
     </Tabs>

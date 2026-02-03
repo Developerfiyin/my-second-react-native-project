@@ -2,22 +2,26 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text className="text-5xl text-green-500">This is the home screen.</Text>
+    <View style={styles.container}>
+      <View>
+        <Text style={styles.emeka}>Welcome Emeka,</Text>
+      </View>
+
+      {/* THE SECOND VIEW */}
     </View>
   );
 }
 
-StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+  },
+  emeka: {
+    fontSize: 30,
+    fontWeight: "bold",
+    textAlign: "left",
+    marginLeft: "7%",
+    marginTop: "10%",
   },
 });
