@@ -1,7 +1,7 @@
-import Fontisto from "@expo/vector-icons/Fontisto";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import {
   ImageBackground,
+  Pressable,
   StyleSheet,
   Text,
   TextInput,
@@ -25,18 +25,18 @@ export default function Index() {
           />
         </View>
 
-        <View>
-          <View style={styles.view2}>
-            <TextInput placeholder="Search dishes..." style={styles.input} />
+        <View style={styles.wrapper}>
+          {/* Input container */}
+          <View style={styles.inputContainer}>
+            <Ionicons name="search" size={20} color="#9CA3AF" />
 
-            <Fontisto
-              name="search"
-              size={30}
-              color="black"
-              style={styles.icons}
-            />
-            <Ionicons name="options-outline" size={24} color="black" />
+            <TextInput placeholder="Search" style={styles.input} />
           </View>
+
+          {/* Notification icon (outside input) */}
+          <Pressable style={styles.iconButton}>
+            <Ionicons name="notifications-outline" size={22} />
+          </Pressable>
         </View>
       </ImageBackground>
 
@@ -67,9 +67,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     flexDirection: "row",
   },
-  input: {
-    backgroundColor: "white",
-  },
 
   icons: {
     backgroundColor: "white",
@@ -78,5 +75,34 @@ const styles = StyleSheet.create({
     marginLeft: "30%",
     marginTop: "10%",
     alignContent: "center",
+  },
+
+  wrapper: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 16,
+    gap: 12,
+  },
+
+  inputContainer: {
+    flex: 1, // 👈 takes remaining width
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#F3F4F6",
+    borderRadius: 12,
+    paddingHorizontal: 12,
+    height: 48,
+  },
+
+  input: {
+    flex: 1, // 👈 allows typing space
+    marginLeft: 8,
+    fontSize: 16,
+  },
+
+  iconButton: {
+    padding: 10,
+    backgroundColor: "#F3F4F6",
+    borderRadius: 12,
   },
 });
