@@ -1,11 +1,23 @@
-import { StyleSheet, Text, View } from "react-native";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { ImageBackground, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <View>
-        <Text style={styles.emeka}>Welcome Emeka,</Text>
-      </View>
+      <ImageBackground
+        style={styles.view1}
+        source={require("../../assets/images/home.png")}
+      >
+        <View style={styles.view2}>
+          <Text style={styles.emeka}>Welcome Emeka,</Text>
+          <Ionicons
+            name="notifications"
+            size={30}
+            color="black"
+            style={styles.icons}
+          />
+        </View>
+      </ImageBackground>
 
       {/* THE SECOND VIEW */}
     </View>
@@ -19,9 +31,28 @@ const styles = StyleSheet.create({
   },
   emeka: {
     fontSize: 30,
+    color: "white",
     fontWeight: "bold",
-    textAlign: "left",
-    marginLeft: "7%",
     marginTop: "10%",
+  },
+  view1: {
+    width: "100%",
+    height: 200,
+    borderRadius: 10,
+    backgroundColor: "rgba(2, 5, 48, 0.94)",
+  },
+  view2: {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "row",
+  },
+
+  icons: {
+    backgroundColor: "white",
+    padding: 9,
+    borderRadius: 10,
+    marginLeft: "30%",
+    marginTop: "10%",
+    alignContent: "center",
   },
 });
