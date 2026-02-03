@@ -9,7 +9,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Welcome Emeka</Text>
+      <Text className="text-gray-600 text-5xl font-bold">Welcome Emeka</Text>
     </View>
   );
 }
