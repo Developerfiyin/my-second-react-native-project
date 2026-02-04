@@ -1,4 +1,6 @@
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { Link } from "expo-router";
 import {
   Image,
@@ -17,28 +19,35 @@ export default function Index() {
         style={styles.view1}
         source={require("../../assets/images/home.png")}
       >
-        <View style={styles.view2}>
-          <Text style={styles.emeka}>Welcome Emeka,</Text>
-          <Ionicons
-            name="notifications"
-            size={30}
-            color="black"
-            style={styles.icons}
-          />
-        </View>
-
-        <View style={styles.wrapper}>
-          {/* Input container */}
-          <View style={styles.inputContainer}>
-            <Ionicons name="search" size={20} color="#9CA3AF" />
-
-            <TextInput placeholder="Search" style={styles.input} />
+        <View
+          style={{
+            width: "100%",
+            borderRadius: 10,
+          }}
+        >
+          <View style={styles.view2}>
+            <Text style={styles.emeka}>Welcome Emeka,</Text>
+            <Ionicons
+              name="notifications"
+              size={30}
+              color="black"
+              style={styles.icons}
+            />
           </View>
 
-          {/* Notification icon (outside input) */}
-          <Pressable style={styles.iconButton}>
-            <Ionicons name="options-outline" size={30} />
-          </Pressable>
+          <View style={styles.wrapper}>
+            {/* Input container */}
+            <View style={styles.inputContainer}>
+              <Ionicons name="search" size={20} color="#9CA3AF" />
+
+              <TextInput placeholder="Search" style={styles.input} />
+            </View>
+
+            {/* Notification icon (outside input) */}
+            <Pressable style={styles.iconButton}>
+              <Ionicons name="options-outline" size={30} />
+            </Pressable>
+          </View>
         </View>
       </ImageBackground>
 
@@ -144,6 +153,7 @@ export default function Index() {
           flexDirection: "row",
           justifyContent: "space-between",
           marginHorizontal: 20,
+          marginBottom: 10,
         }}
       >
         <Text style={{ fontSize: 20, fontWeight: "600", color: "#0F172A" }}>
@@ -154,7 +164,54 @@ export default function Index() {
         </Link>
       </View>
 
-      <View> </View>
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          marginTop: 20,
+        }}
+      >
+        <View>
+          <MaterialCommunityIcons
+            name="car-wash"
+            size={49}
+            color="black"
+            style={styles.icon}
+          />
+          <Text style={{ color: "#0F172A" }}> Car Wash</Text>
+        </View>
+
+        <View>
+          <MaterialCommunityIcons
+            name="tools"
+            size={49}
+            color="black"
+            style={styles.icon}
+          />
+          <Text style={{ color: "#0F172A" }}>Tools</Text>
+        </View>
+
+        <View>
+          <MaterialCommunityIcons
+            name="pump"
+            size={49}
+            color="black"
+            style={styles.icon}
+          />
+          <Text style={{ color: "#0F172A" }}> Car Maintainence</Text>
+        </View>
+
+        <View>
+          <FontAwesome5
+            name="coins"
+            size={49}
+            color="black"
+            style={styles.icon}
+          />
+          <Text style={{ color: "#0F172A" }}> Change Tyres</Text>
+        </View>
+      </View>
     </View>
   );
 }
@@ -171,10 +228,8 @@ const styles = StyleSheet.create({
     marginTop: "10%",
   },
   view1: {
-    width: "100%",
-    height: "40%",
-    borderRadius: 10,
-    backgroundColor: "rgba(4, 7, 48, 0.94)",
+    height: 230,
+    backgroundColor: "#0F1729",
   },
   view2: {
     display: "flex",
@@ -190,7 +245,6 @@ const styles = StyleSheet.create({
     marginTop: "10%",
     alignContent: "center",
   },
-
   wrapper: {
     flexDirection: "row",
     marginTop: 40,
@@ -220,10 +274,17 @@ const styles = StyleSheet.create({
     backgroundColor: "#F3F4F6",
     borderRadius: 12,
   },
+
   text1: {
     fontSize: 28,
     fontWeight: "bold",
     color: "rgba(4, 7, 48, 0.94)",
     paddingHorizontal: 10,
+  },
+  icon: {
+    backgroundColor: "#d9d9dd",
+    padding: 10,
+    borderRadius: 100,
+    alignSelf: "center",
   },
 });
