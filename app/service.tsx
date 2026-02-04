@@ -191,7 +191,8 @@ export default function ServiceScreen() {
           </View>
         </View>
       </Pressable>
-      <Pressable>
+
+      <Pressable onPress={() => router.push("/vehicle")}>
         <View>
           <View
             style={{
@@ -232,7 +233,6 @@ export default function ServiceScreen() {
           </View>
         </View>
       </Pressable>
-      x
     </View>
   );
 }
