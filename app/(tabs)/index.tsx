@@ -192,7 +192,7 @@ export default function Index() {
         </View>
 
         <View>
-          <Image />
+          <Image source={require("../../assets/images/Frame 14.png")} />
           <Text style={{ color: "#0F172A" }}> Car Maintainence</Text>
         </View>
 
