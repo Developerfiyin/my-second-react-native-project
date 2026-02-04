@@ -92,6 +92,50 @@ export default function Index() {
           style={{ width: "40%", height: "100%" }}
         />
       </View>
+      {/*The div with somall 4 views*/}
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: 8,
+          marginHorizontal: "auto",
+          marginTop: 10,
+        }}
+      >
+        <View
+          style={{
+            backgroundColor: "#0F172A",
+            width: 8,
+            height: 8,
+            borderRadius: "100%",
+          }}
+        ></View>
+
+        <View
+          style={{
+            backgroundColor: "#D9D9D9",
+            width: 8,
+            height: 8,
+            borderRadius: "100%",
+          }}
+        ></View>
+        <View
+          style={{
+            backgroundColor: "#D9D9D9",
+            width: 8,
+            height: 8,
+            borderRadius: "100%",
+          }}
+        ></View>
+        <View
+          style={{
+            backgroundColor: "#D9D9D9",
+            width: 8,
+            height: 8,
+            borderRadius: "100%",
+          }}
+        ></View>
+      </View>
     </View>
   );
 }
