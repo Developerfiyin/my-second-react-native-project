@@ -22,7 +22,6 @@ export default function ServiceScreen() {
           See Available Services
         </Text>
       </View>
-
       <Text
         style={{
           fontSize: 20,
@@ -32,7 +31,6 @@ export default function ServiceScreen() {
       >
         Receive all manner of services from the comfort of your home.
       </Text>
-
       <Pressable onPress={() => router.push("/vehicle")}>
         <View>
           <View
@@ -72,7 +70,6 @@ export default function ServiceScreen() {
           </View>
         </View>
       </Pressable>
-
       <Pressable onPress={() => router.push("/vehicle")}>
         <View>
           <View
@@ -114,7 +111,6 @@ export default function ServiceScreen() {
           </View>
         </View>
       </Pressable>
-
       <Pressable onPress={() => router.push("/vehicle")}>
         <View>
           <View
@@ -154,7 +150,6 @@ export default function ServiceScreen() {
           </View>
         </View>
       </Pressable>
-
       <Pressable onPress={() => router.push("/vehicle")}>
         <View>
           <View
@@ -196,46 +191,48 @@ export default function ServiceScreen() {
           </View>
         </View>
       </Pressable>
-
-      <View>
-        <View
-          style={{
-            backgroundColor: "#E8E8E8",
-            display: "flex",
-            justifyContent: "space-around",
-            flexDirection: "row",
-            padding: 13,
-            borderRadius: 10,
-            borderColor: "#ffff",
-            marginTop: 20,
-            marginHorizontal: 20,
-          }}
-        >
-          <FontAwesome5
-            name="coins"
-            size={34}
-            color="black"
-            style={styles.icon}
-          />
-
+      <Pressable>
+        <View>
           <View
             style={{
+              backgroundColor: "#E8E8E8",
               display: "flex",
-              flexDirection: "column",
+              justifyContent: "space-around",
+              flexDirection: "row",
+              padding: 13,
+              borderRadius: 10,
+              borderColor: "#ffff",
+              marginTop: 20,
+              marginHorizontal: 20,
             }}
           >
-            <Text style={{ fontSize: 20, fontWeight: "600" }}>
-              Tire Replacement
-            </Text>
-            <Text style={{ color: "#0F172A" }}>
-              Grab a brand new set of tyres
+            <FontAwesome5
+              name="coins"
+              size={34}
+              color="black"
+              style={styles.icon}
+            />
+
+            <View
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Text style={{ fontSize: 20, fontWeight: "600" }}>
+                Tire Replacement
+              </Text>
+              <Text style={{ color: "#0F172A" }}>
+                Grab a brand new set of tyres
+              </Text>
+            </View>
+            <Text style={{ fontSize: 30, color: "#0F172A", fontWeight: "500" }}>
+              $56
             </Text>
           </View>
-          <Text style={{ fontSize: 30, color: "#0F172A", fontWeight: "500" }}>
-            $56
-          </Text>
         </View>
-      </View>
+      </Pressable>
+      x
     </View>
   );
 }
