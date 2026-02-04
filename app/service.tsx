@@ -2,8 +2,8 @@ import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
-import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { Link, router } from "expo-router";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 export default function ServiceScreen() {
   return (
     <View style={{ display: "flex", flexDirection: "column" }}>
@@ -33,43 +33,45 @@ export default function ServiceScreen() {
         Receive all manner of services from the comfort of your home.
       </Text>
 
-      <View>
-        <View
-          style={{
-            backgroundColor: "#E8E8E8",
-            display: "flex",
-            justifyContent: "space-around",
-            flexDirection: "row",
-            alignContent: "center",
-            padding: 13,
-            borderRadius: 10,
-            borderColor: "#ffff",
-            marginTop: 20,
-            marginHorizontal: 20,
-          }}
-        >
-          <MaterialCommunityIcons
-            name="car-wash"
-            size={40}
-            color="black"
-            style={styles.icon}
-          />
+      <Pressable onPress={() => router.push("/vehicle")}>
+        <View>
           <View
             style={{
+              backgroundColor: "#E8E8E8",
               display: "flex",
-              flexDirection: "column",
+              justifyContent: "space-around",
+              flexDirection: "row",
+              alignContent: "center",
+              padding: 13,
+              borderRadius: 10,
+              borderColor: "#ffff",
+              marginTop: 20,
+              marginHorizontal: 20,
             }}
           >
-            <Text style={{ fontSize: 20, fontWeight: "600" }}>
-              Puncture Repair
+            <MaterialCommunityIcons
+              name="car-wash"
+              size={40}
+              color="black"
+              style={styles.icon}
+            />
+            <View
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Text style={{ fontSize: 20, fontWeight: "600" }}>
+                Puncture Repair
+              </Text>
+              <Text style={{ color: "#0F172A" }}> Car Wash</Text>
+            </View>
+            <Text style={{ fontSize: 30, color: "#0F172A", fontWeight: "500" }}>
+              $56
             </Text>
-            <Text style={{ color: "#0F172A" }}> Car Wash</Text>
           </View>
-          <Text style={{ fontSize: 30, color: "#0F172A", fontWeight: "500" }}>
-            $56
-          </Text>
         </View>
-      </View>
+      </Pressable>
 
       <View>
         <View
