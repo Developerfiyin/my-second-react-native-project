@@ -35,12 +35,30 @@ export default function Index() {
 
           {/* Notification icon (outside input) */}
           <Pressable style={styles.iconButton}>
-            <Ionicons name="options-outline" size={22} />
+            <Ionicons name="options-outline" size={30} />
           </Pressable>
         </View>
       </ImageBackground>
 
       {/* THE SECOND VIEW */}
+
+      <View>
+        <View
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "row",
+          }}
+        >
+          <Text>
+            Professional Tire <br />
+            service at your door step
+          </Text>
+        </View>
+        <Pressable>
+          <button type="submit"> See Offer</button>
+        </Pressable>
+      </View>
     </View>
   );
 }
@@ -97,7 +115,7 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    flex: 1, // 👈 allows typing space
+    flex: 1, //  allows typing space
     marginLeft: 8,
     fontSize: 16,
   },
