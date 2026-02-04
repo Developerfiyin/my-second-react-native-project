@@ -73,45 +73,47 @@ export default function ServiceScreen() {
         </View>
       </Pressable>
 
-      <View>
-        <View
-          style={{
-            backgroundColor: "#E8E8E8",
-            display: "flex",
-            justifyContent: "space-around",
-            flexDirection: "row",
-            alignContent: "center",
-            padding: 13,
-            borderRadius: 10,
-            borderColor: "#ffff",
-            marginTop: 20,
-            marginHorizontal: 20,
-          }}
-        >
-          <MaterialCommunityIcons
-            name="tools"
-            size={40}
-            color="black"
-            style={styles.icon}
-          />
+      <Pressable onPress={() => router.push("/vehicle")}>
+        <View>
           <View
             style={{
+              backgroundColor: "#E8E8E8",
               display: "flex",
-              flexDirection: "column",
+              justifyContent: "space-around",
+              flexDirection: "row",
+              alignContent: "center",
+              padding: 13,
+              borderRadius: 10,
+              borderColor: "#ffff",
+              marginTop: 20,
+              marginHorizontal: 20,
             }}
           >
-            <Text style={{ fontSize: 20, fontWeight: "600" }}>
-              Puncture Repair
-            </Text>
-            <Text style={{ color: "#0F172A" }}>
-              Fix flat and minor leaks on the spot
+            <MaterialCommunityIcons
+              name="tools"
+              size={40}
+              color="black"
+              style={styles.icon}
+            />
+            <View
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Text style={{ fontSize: 20, fontWeight: "600" }}>
+                Puncture Repair
+              </Text>
+              <Text style={{ color: "#0F172A" }}>
+                Fix flat and minor leaks on the spot
+              </Text>
+            </View>
+            <Text style={{ fontSize: 30, color: "#0F172A", fontWeight: "500" }}>
+              $56
             </Text>
           </View>
-          <Text style={{ fontSize: 30, color: "#0F172A", fontWeight: "500" }}>
-            $56
-          </Text>
         </View>
-      </View>
+      </Pressable>
 
       <View>
         <View
