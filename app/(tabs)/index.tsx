@@ -1,4 +1,5 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { Link } from "expo-router";
 import {
   Image,
   ImageBackground,
@@ -136,6 +137,24 @@ export default function Index() {
           }}
         ></View>
       </View>
+
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginHorizontal: 20,
+        }}
+      >
+        <Text style={{ fontSize: 20, fontWeight: "600", color: "#0F172A" }}>
+          Services
+        </Text>
+        <Link href={"/Map"} style={{ color: "#0F172A" }}>
+          See All
+        </Link>
+      </View>
+
+      <View> </View>
     </View>
   );
 }
