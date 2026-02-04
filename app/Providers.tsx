@@ -52,6 +52,21 @@ export default function Provider() {
           </View>
         </View>
       </Pressable>
+
+      <View style={styles.card}>
+        <Image source={require("../assets/images/image 14.png")} />
+        <View>
+          <Text>Williams Shakespare</Text>
+          <Text>Los Angeles</Text>
+
+          <View style={{ flexDirection: "row", gap: 10 }}>
+            <Ionicons name="star" size={24} color="black" />
+            <Text>4.8</Text>
+            <Ionicons name="time-outline" size={24} color="black" />
+            <Text>5 min</Text>
+          </View>
+        </View>
+      </View>
     </View>
   );
 }
