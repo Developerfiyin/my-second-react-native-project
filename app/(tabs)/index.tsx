@@ -1,6 +1,5 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import {
-  Button,
   Image,
   ImageBackground,
   Pressable,
@@ -46,18 +45,24 @@ export default function Index() {
 
       <View
         style={{
-          marginTop: "15%",
+          marginTop: "13%",
           gap: 12,
-          backgroundColor: "darkgrey",
-          padding: 10,
-          borderRadius: 15,
+          backgroundColor: "lightgrey",
+          paddingLeft: 10,
+          borderRadius: 18,
+          display: "flex",
+          height: 220,
+          justifyContent: "space-between",
+          flexDirection: "row",
+          overflow: "hidden",
+          marginHorizontal: 30,
         }}
       >
         <View
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            flexDirection: "row",
+            flexDirection: "column",
+            paddingVertical: 20,
           }}
         >
           <Text style={styles.text1}>
@@ -66,18 +71,26 @@ export default function Index() {
             Doorstep
           </Text>
 
-          <Image
-            source={require("../../assets/images/Frame1.png")}
-            style={{ width: "50%", marginLeft: "auto" }}
-          />
+          <Pressable
+            style={{
+              padding: 8,
+              width: 200,
+              marginTop: 10,
+              borderRadius: 100,
+              marginRight: 30,
+              backgroundColor: "rgba(4, 7, 48, 0.94)",
+            }}
+          >
+            <Text style={{ color: "white", fontSize: 16, textAlign: "center" }}>
+              See Offer
+            </Text>
+          </Pressable>
         </View>
 
-        <Pressable style={{ marginInline: "auto", padding: 10 }}>
-          <Button
-            title="See Offer"
-            onPress={() => console.log("Offer pressed")}
-          />
-        </Pressable>
+        <Image
+          source={require("../../assets/images/Frame1.png")}
+          style={{ width: "40%", height: "100%" }}
+        />
       </View>
     </View>
   );
