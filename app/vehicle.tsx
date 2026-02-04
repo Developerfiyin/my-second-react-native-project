@@ -23,6 +23,27 @@ export default function VehicleDetails() {
           accessibilityLabel="Email"
         ></TextInput>
       </View>
+
+      <View style={styles.View}>
+        <Text style={styles.text} accessibilityLabel="Email">
+          MAKE
+        </Text>
+        <TextInput
+          placeholder="e.g Tesla"
+          style={styles.input}
+          accessibilityLabel="Email"
+        ></TextInput>
+      </View>
+      <View style={styles.View}>
+        <Text style={styles.text} accessibilityLabel="Email">
+          MAKE
+        </Text>
+        <TextInput
+          placeholder="e.g Tesla"
+          style={styles.input}
+          accessibilityLabel="Email"
+        ></TextInput>
+      </View>
     </View>
   );
 }
@@ -36,14 +57,13 @@ const styles = StyleSheet.create({
   View: {
     marginHorizontal: 20,
     gap: 10,
-    marginVertical: 25,
+    marginVertical: 20,
   },
   input: {
     marginHorizontal: 20,
     borderRadius: 10,
     backgroundColor: "#E8E8E8",
     paddingLeft: 20,
-
     padding: 20,
   },
 });
