@@ -1,7 +1,14 @@
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { Link } from "expo-router";
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { Link, router } from "expo-router";
+import {
+    Image,
+    Pressable,
+    StyleSheet,
+    Text,
+    TextInput,
+    View,
+} from "react-native";
 
 export default function Provider() {
   return (
@@ -24,10 +31,27 @@ export default function Provider() {
         {/* Input container */}
         <View style={styles.inputContainer}>
           <Ionicons name="search" size={20} color="#9CA3AF" />
-
           <TextInput placeholder="Search" style={styles.input} />
         </View>
       </View>
+
+      <Pressable
+        onPress={() => router.push("/details")}
+        style={({ pressed }) => [styles.card, pressed && styles.pressed]}
+      >
+        <Image source={require("../assets/images/image 14.png")} />
+        <View>
+          <Text>Oladele Micheal</Text>
+          <Text>Lekki Phase 1, Lagos</Text>
+
+          <View style={{ flexDirection: "row", gap: 10 }}>
+            <Ionicons name="star" size={24} color="black" />
+            <Text>4.8</Text>
+            <Ionicons name="time-outline" size={24} color="black" />
+            <Text>5 min</Text>
+          </View>
+        </View>
+      </Pressable>
     </View>
   );
 }
@@ -45,7 +69,7 @@ const styles = StyleSheet.create({
     flex: 1, // takes remaining width
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#e9e9e9",
+    backgroundColor: "#e8e8e8",
     borderRadius: 12,
     paddingHorizontal: 12,
     height: 48,
@@ -55,5 +79,19 @@ const styles = StyleSheet.create({
     flex: 1, //  allows typing space
     marginLeft: 8,
     fontSize: 16,
+  },
+  card: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 16,
+    backgroundColor: "#E9E9E9",
+    marginTop: 20,
+    marginHorizontal: 20,
+    gap: 20,
+    borderRadius: 12,
+    marginBottom: 12,
+  },
+  pressed: {
+    opacity: 0.7,
   },
 });
