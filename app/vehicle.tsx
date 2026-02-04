@@ -18,7 +18,7 @@ export default function VehicleDetails() {
           MAKE
         </Text>
         <TextInput
-          placeholder="e.g Tesla"
+          placeholder="e.g   Tesla"
           style={styles.input}
           accessibilityLabel="Email"
         ></TextInput>
@@ -26,20 +26,10 @@ export default function VehicleDetails() {
 
       <View style={styles.View}>
         <Text style={styles.text} accessibilityLabel="Email">
-          MAKE
+          MODEL
         </Text>
         <TextInput
-          placeholder="e.g Tesla"
-          style={styles.input}
-          accessibilityLabel="Email"
-        ></TextInput>
-      </View>
-      <View style={styles.View}>
-        <Text style={styles.text} accessibilityLabel="Email">
-          MAKE
-        </Text>
-        <TextInput
-          placeholder="e.g Tesla"
+          placeholder=" Model  3"
           style={styles.input}
           accessibilityLabel="Email"
         ></TextInput>
