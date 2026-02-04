@@ -205,7 +205,7 @@ export default function Index() {
             color="black"
             style={styles.icon}
           />
-          <Text style={{ color: "#0F172A" }}> Car Maintainence</Text>
+          <Text style={{ color: "#0F172A" }}> Car Main...</Text>
         </View>
 
         <View>
