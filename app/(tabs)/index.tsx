@@ -1,5 +1,7 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import {
+  Button,
+  Image,
   ImageBackground,
   Pressable,
   StyleSheet,
@@ -42,7 +44,15 @@ export default function Index() {
 
       {/* THE SECOND VIEW */}
 
-      <View>
+      <View
+        style={{
+          marginTop: "15%",
+          gap: 12,
+          backgroundColor: "darkgrey",
+          padding: 10,
+          borderRadius: 15,
+        }}
+      >
         <View
           style={{
             display: "flex",
@@ -50,13 +60,23 @@ export default function Index() {
             flexDirection: "row",
           }}
         >
-          <Text>
-            Professional Tire <br />
-            service at your door step
+          <Text style={styles.text1}>
+            Professional Tire {"\n"}
+            Service at your {"\n"}
+            Doorstep
           </Text>
+
+          <Image
+            source={require("../../assets/images/Frame1.png")}
+            style={{ width: "50%", marginLeft: "auto" }}
+          />
         </View>
-        <Pressable>
-          <button type="submit"> See Offer</button>
+
+        <Pressable style={{ marginInline: "auto", padding: 10 }}>
+          <Button
+            title="See Offer"
+            onPress={() => console.log("Offer pressed")}
+          />
         </Pressable>
       </View>
     </View>
@@ -76,9 +96,9 @@ const styles = StyleSheet.create({
   },
   view1: {
     width: "100%",
-    height: "50%",
+    height: "40%",
     borderRadius: 10,
-    backgroundColor: "rgba(2, 5, 48, 0.94)",
+    backgroundColor: "rgba(4, 7, 48, 0.94)",
   },
   view2: {
     display: "flex",
@@ -97,7 +117,7 @@ const styles = StyleSheet.create({
 
   wrapper: {
     flexDirection: "row",
-    marginTop: 20,
+    marginTop: 40,
     alignItems: "center",
     paddingHorizontal: 16,
     gap: 12,
@@ -110,7 +130,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#F3F4F6",
     borderRadius: 12,
     paddingHorizontal: 12,
-
     height: 48,
   },
 
@@ -124,5 +143,11 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#F3F4F6",
     borderRadius: 12,
+  },
+  text1: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "rgba(4, 7, 48, 0.94)",
+    paddingHorizontal: 10,
   },
 });
