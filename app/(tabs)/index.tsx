@@ -92,9 +92,12 @@ export default function Index() {
               backgroundColor: "rgba(4, 7, 48, 0.94)",
             }}
           >
-            <Text style={{ color: "white", fontSize: 16, textAlign: "center" }}>
+            <Link
+              href={"/Map"}
+              style={{ color: "white", fontSize: 16, textAlign: "center" }}
+            >
               See Offer
-            </Text>
+            </Link>
           </Pressable>
         </View>
 
@@ -287,7 +290,7 @@ const styles = StyleSheet.create({
     marginTop: "10%",
   },
   view1: {
-    height: 230,
+    height: 260,
     backgroundColor: "#0F1729",
   },
   view2: {
@@ -304,6 +307,7 @@ const styles = StyleSheet.create({
     marginTop: "10%",
     alignContent: "center",
   },
+
   wrapper: {
     flexDirection: "row",
     marginTop: 40,
