@@ -161,65 +161,7 @@ export default function Index() {
         <Text style={{ fontSize: 20, fontWeight: "600", color: "#0F172A" }}>
           Services
         </Text>
-        <Link href={"/Map"} style={{ color: "#0F172A" }}>
-          See All
-        </Link>
-      </View>
-
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          marginTop: 30,
-          marginBottom: 20,
-        }}
-      >
-        <View>
-          <Image
-            source={require("../../assets/images/image 15.png")}
-            style={styles.icon}
-          />
-          <Text style={{ color: "#0F172A" }}> Car Wash</Text>
-        </View>
-
-        <View>
-          <Image
-            source={require("../../assets/images/image 16.png")}
-            style={styles.icon}
-          />
-          <Text style={{ color: "#0F172A" }}>Tools</Text>
-        </View>
-
-        <View>
-          <Image source={require("../../assets/images/Frame 14.png")} />
-          <Text style={{ color: "#0F172A" }}> Car Maintainence</Text>
-        </View>
-
-        <View>
-          <FontAwesome5
-            name="coins"
-            size={49}
-            color="black"
-            style={styles.icon}
-          />
-          <Text style={{ color: "#0F172A" }}> Change Tyres</Text>
-        </View>
-      </View>
-
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          marginHorizontal: 20,
-          marginTop: 30,
-        }}
-      >
-        <Text style={{ fontSize: 20, fontWeight: "600", color: "#0F172A" }}>
-          Services Providers
-        </Text>
-        <Link href={"/Map"} style={{ color: "#0F172A" }}>
+        <Link href={"/service"} style={{ color: "#0F172A" }}>
           See All
         </Link>
       </View>
@@ -268,6 +210,62 @@ export default function Index() {
             name="coins"
             size={49}
             color="black"
+            style={styles.icon}
+          />
+          <Text style={{ color: "#0F172A" }}> Change Tyres</Text>
+        </View>
+      </View>
+
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginHorizontal: 20,
+          marginTop: 30,
+        }}
+      >
+        <Text style={{ fontSize: 20, fontWeight: "600", color: "#0F172A" }}>
+          Services Providers
+        </Text>
+        <Link href={"/Map"} style={{ color: "#0F172A" }}>
+          See All
+        </Link>
+      </View>
+
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          marginTop: 30,
+          marginBottom: 20,
+        }}
+      >
+        <View>
+          <Image
+            source={require("../../assets/images/image 15.png")}
+            style={styles.icon}
+          />
+          <Text style={{ color: "#0F172A" }}> Car Wash</Text>
+        </View>
+
+        <View>
+          <Image
+            source={require("../../assets/images/image 16.png")}
+            style={styles.icon}
+          />
+          <Text style={{ color: "#0F172A" }}>Tools</Text>
+        </View>
+
+        <View>
+          <Image source={require("../../assets/images/image 14.png")} />
+          <Text style={{ color: "#0F172A" }}> Car Main...</Text>
+        </View>
+
+        <View>
+          <Image
+            source={require("../../assets/images/image 15.png")}
             style={styles.icon}
           />
           <Text style={{ color: "#0F172A" }}> Change Tyres</Text>
