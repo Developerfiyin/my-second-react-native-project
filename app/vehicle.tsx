@@ -14,8 +14,14 @@ export default function VehicleDetails() {
       </Text>
 
       <View style={styles.View}>
-        <Text style={styles.text}>MAKE </Text>
-        <TextInput placeholder="e.g Tesla" style={styles.input}></TextInput>
+        <Text style={styles.text} accessibilityLabel="Email">
+          MAKE
+        </Text>
+        <TextInput
+          placeholder="e.g Tesla"
+          style={styles.input}
+          accessibilityLabel="Email"
+        ></TextInput>
       </View>
     </View>
   );
@@ -37,7 +43,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: "#E8E8E8",
     paddingLeft: 20,
-    paddingVertical: "30%",
+
     padding: 20,
   },
 });
