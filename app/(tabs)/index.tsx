@@ -231,7 +231,7 @@ export default function Index() {
         <Text style={{ fontSize: 20, fontWeight: "600", color: "#0F172A" }}>
           Services Providers
         </Text>
-        <Link href={"/Map"} style={{ color: "#0F172A" }}>
+        <Link href={"/Providers"} style={{ color: "#0F172A" }}>
           See All
         </Link>
       </View>
