@@ -60,7 +60,17 @@ export default function searchInput() {
       </Pressable>
 
       <View style={styles.card}>
-        <Image source={require("../assets/images/image.png")} />
+        <Image
+          source={require("../assets/images/image 19.png")}
+          style={{
+            width: 103,
+            height: 96,
+            opacity: 1,
+            padding: 20,
+            backgroundColor: "#D1D7E8",
+            borderRadius: 10,
+          }}
+        />
         <View>
           <Text>Williams Shakespare</Text>
           <Text>Los Angeles</Text>
@@ -90,7 +100,7 @@ export default function searchInput() {
       </View>
 
       <View style={styles.card}>
-        <Image source={require("../assets/images/image 16.png")} />
+        <Image source={require("../assets/images/image.png")} />
         <View>
           <Text>Oladele Micheal</Text>
           <Text>Lekki Phase 1, Lagos</Text>
