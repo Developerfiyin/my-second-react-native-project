@@ -8,7 +8,6 @@ import {
   Pressable,
   StyleSheet,
   Text,
-  TextInput,
   View,
 } from "react-native";
 
@@ -40,18 +39,15 @@ export default function Index() {
               onPress={() => router.push("/search")}
               style={styles.inputContainer}
             >
-              {/* Input container */}
-              <View>
-                <Ionicons name="search" size={20} color="#9CA3AF" />
+              <Ionicons
+                name="search"
+                size={20}
+                color="#9CA3AF"
+                style={{ marginTop: 20 }}
+              />
 
-                <TextInput
-                  placeholder="Search"
-                  style={styles.input}
-                  autoFocus
-                />
-              </View>
+              <Text style={styles.input}> Search Service...</Text>
             </Pressable>
-
             {/* Notification icon (outside input) */}
             <Pressable style={styles.iconButton}>
               <Ionicons name="options-outline" size={30} />
@@ -319,24 +315,28 @@ const styles = StyleSheet.create({
   wrapper: {
     flexDirection: "row",
     marginTop: 40,
-    alignItems: "center",
-    paddingHorizontal: 16,
+    marginHorizontal: 30,
     gap: 12,
   },
 
   inputContainer: {
+    flex: 1, // takes remaining width
     flexDirection: "row",
-    alignItems: "center",
-    height: 48,
-    paddingHorizontal: 14,
+    gap: 30,
+
+    backgroundColor: "#E8E8E8",
     borderRadius: 12,
-    backgroundColor: "#F3F4F6",
+    paddingHorizontal: 12,
+    height: 59,
   },
 
   input: {
     flex: 1, //  allows typing space
-    marginLeft: 8,
-    fontSize: 16,
+    marginLeft: 19,
+    fontSize: 18,
+    textAlign: "left",
+    marginTop: 15,
+    color: "#F3FF4F6",
   },
 
   iconButton: {
