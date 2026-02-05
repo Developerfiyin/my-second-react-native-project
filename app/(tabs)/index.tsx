@@ -1,8 +1,7 @@
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import {
   Image,
   ImageBackground,
@@ -37,12 +36,21 @@ export default function Index() {
           </View>
 
           <View style={styles.wrapper}>
-            {/* Input container */}
-            <View style={styles.inputContainer}>
-              <Ionicons name="search" size={20} color="#9CA3AF" />
+            <Pressable
+              onPress={() => router.push("/search")}
+              style={styles.inputContainer}
+            >
+              {/* Input container */}
+              <View>
+                <Ionicons name="search" size={20} color="#9CA3AF" />
 
-              <TextInput placeholder="Search" style={styles.input} />
-            </View>
+                <TextInput
+                  placeholder="Search"
+                  style={styles.input}
+                  autoFocus
+                />
+              </View>
+            </Pressable>
 
             {/* Notification icon (outside input) */}
             <Pressable style={styles.iconButton}>
