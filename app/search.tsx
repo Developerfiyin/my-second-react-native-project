@@ -55,7 +55,7 @@ export default function searchInput() {
           </View>
 
           <Text style={styles.text}>Terra former Tractor 2021</Text>
-          <Text>$240.00</Text>
+          <Text style={styles.text}>$240.00</Text>
         </View>
       </Pressable>
 
@@ -72,15 +72,15 @@ export default function searchInput() {
           }}
         />
         <View>
-          <Text>Williams Shakespare</Text>
-          <Text>Los Angeles</Text>
-
           <View style={{ flexDirection: "row", gap: 10 }}>
-            <Ionicons name="star" size={24} color="black" />
-            <Text>4.8</Text>
-            <Ionicons name="time-outline" size={24} color="black" />
-            <Text>5 min</Text>
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="#D1D7E8" />
+            <Ionicons name="star" size={24} color="#D1D7E8" />
           </View>
+          <Text style={styles.text}>Terra Former Tractor 2018</Text>
+          <Text style={styles.text}>$170.00</Text>
         </View>
       </View>
 
