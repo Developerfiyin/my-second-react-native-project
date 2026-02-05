@@ -1,6 +1,18 @@
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { useState } from "react";
+import {
+    Modal,
+    Pressable,
+    StyleSheet,
+    Text,
+    TextInput,
+    View,
+} from "react-native";
+
+const YEARS = ["2026", "2025", "2024", "2023", "2022", "2021", "2020"];
 
 export default function VehicleDetails() {
+  const [open, setOpen] = useState(false);
+  const [year, setYear] = useState<string | null>(null);
   return (
     <View
       style={{
@@ -33,6 +45,40 @@ export default function VehicleDetails() {
           style={styles.input}
           accessibilityLabel="Email"
         ></TextInput>
+      </View>
+
+      <View style={styles.container}>
+        {/* Label */}
+        <Text style={styles.label}>Year</Text>
+
+        {/* Input-like field */}
+        <Pressable style={styles.selectBox} onPress={() => setOpen(true)}>
+          <Text style={[styles.value, year && styles.selectedValue]}>
+            {year || "Select year"}
+          </Text>
+
+          <Ionicons name="chevron-down" size={20} color="#9CA3AF" />
+        </Pressable>
+
+        {/* Dropdown */}
+        <Modal visible={open} transparent animationType="fade">
+          <Pressable style={styles.overlay} onPress={() => setOpen(false)}>
+            <View style={styles.dropdown}>
+              {YEARS.map((item) => (
+                <Pressable
+                  key={item}
+                  style={styles.option}
+                  onPress={() => {
+                    setYear(item);
+                    setOpen(false);
+                  }}
+                >
+                  <Text style={styles.optionText}>{item}</Text>
+                </Pressable>
+              ))}
+            </View>
+          </Pressable>
+        </Modal>
       </View>
     </View>
   );
