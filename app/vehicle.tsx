@@ -82,6 +82,10 @@ export default function VehicleDetails() {
           </Pressable>
         </Modal>
       </View>
+
+      <Pressable style={styles.pressable}>
+        <Text style={styles.text1}> Continue</Text>
+      </Pressable>
     </View>
   );
 }
@@ -163,5 +167,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#fff",
     fontWeight: "400",
+  },
+  pressable: {
+    backgroundColor: "#0f172a",
+
+    padding: 20,
+    borderRadius: 10,
+    marginHorizontal: 20,
+  },
+  text1: {
+    color: "#ffff",
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });
