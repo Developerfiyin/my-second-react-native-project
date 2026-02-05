@@ -325,13 +325,12 @@ const styles = StyleSheet.create({
   },
 
   inputContainer: {
-    flex: 1, // takes remaining width
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#F3F4F6",
-    borderRadius: 12,
-    paddingHorizontal: 12,
     height: 48,
+    paddingHorizontal: 14,
+    borderRadius: 12,
+    backgroundColor: "#F3F4F6",
   },
 
   input: {
