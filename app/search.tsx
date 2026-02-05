@@ -1,9 +1,19 @@
-import { View,Image,Pressable, Text, TextInput, } from "react-native";
-import { Link } from "expo-router";
-import { router } from "expo-router";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { Link, router } from "expo-router";
+import {
+    Image,
+    Pressable,
+    StyleSheet,
+    Text,
+    TextInput,
+    View,
+} from "react-native";
+
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+
 export default function searchInput() {
-  return <View
-   style={{ display: "flex", flexDirection: "column", gap: 5 }}>
+  return (
+    <View style={{ display: "flex", flexDirection: "column", gap: 5 }}>
       <View
         style={{
           display: "flex",
@@ -15,7 +25,7 @@ export default function searchInput() {
         <Link href={"/(tabs)"} style={{ right: "15%" }}>
           <FontAwesome5 name="long-arrow-alt-left" size={34} color="black" />
         </Link>
-        <Text style={{ fontSize: 25, fontWeight: "500" }}>See Technicians</Text>
+        <Text style={{ fontSize: 25, fontWeight: "500" }}>See Tyres</Text>
       </View>
 
       <View style={styles.wrapper}>
@@ -32,15 +42,17 @@ export default function searchInput() {
       >
         <Image source={require("../assets/images/image 14.png")} />
         <View>
-          <Text>Oladele Micheal</Text>
-          <Text>Lekki Phase 1, Lagos</Text>
-
           <View style={{ flexDirection: "row", gap: 10 }}>
-            <Ionicons name="star" size={24} color="black" />
-            <Text>4.8</Text>
-            <Ionicons name="time-outline" size={24} color="black" />
-            <Text>5 min</Text>
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
           </View>
+
+          <Text style={styles.text}>Terra former Tractor 2021</Text>
+          <Text>$240.00</Text>
         </View>
       </Pressable>
 
@@ -175,10 +187,8 @@ const styles = StyleSheet.create({
   pressed: {
     opacity: 0.7,
   },
+  text: {
+    marginTop: 10,
+    marginBottom: 10,
+  },
 });
-
-
-
-
-  
-
