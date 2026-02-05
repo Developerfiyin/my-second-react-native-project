@@ -40,7 +40,10 @@ export default function searchInput() {
         onPress={() => router.push("/profile")}
         style={({ pressed }) => [styles.card, pressed && styles.pressed]}
       >
-        <Image source={require("../assets/images/image 14.png")} />
+        <Image
+          source={require("../assets/images/image 20.png")}
+          style={styles.image}
+        />
         <View>
           <View style={{ flexDirection: "row", gap: 10 }}>
             <Ionicons name="star" size={24} color="gold" />
@@ -190,5 +193,16 @@ const styles = StyleSheet.create({
   text: {
     marginTop: 10,
     marginBottom: 10,
+  },
+  image: {
+    // width: "50%",
+    // height: "70%",
+    borderRadius: 10,
+    width: 96,
+    height: 96,
+    left: 4,
+    opacity: 1,
+    padding: 20,
+    backgroundColor: "#D1D7E4",
   },
 });
