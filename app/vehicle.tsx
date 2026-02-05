@@ -102,4 +102,58 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     padding: 20,
   },
+  container: {
+    marginBottom: 20,
+  },
+
+  label: {
+    fontSize: 14,
+    color: "#6B7280",
+    marginBottom: 6,
+  },
+
+  selectBox: {
+    height: 48,
+    borderWidth: 1,
+    borderColor: "#E5E7EB",
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    backgroundColor: "#000", // matches image
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+
+  value: {
+    fontSize: 16,
+    color: "#9CA3AF", // placeholder color
+  },
+
+  selectedValue: {
+    color: "#fff",
+  },
+
+  overlay: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.4)",
+    justifyContent: "center",
+    padding: 20,
+  },
+
+  dropdown: {
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    overflow: "hidden",
+  },
+
+  option: {
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: "#E5E7EB",
+  },
+
+  optionText: {
+    fontSize: 16,
+  },
 });
