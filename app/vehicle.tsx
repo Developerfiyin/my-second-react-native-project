@@ -14,6 +14,7 @@ const YEARS = ["2026", "2025", "2024", "2023", "2022", "2021", "2020"];
 export default function VehicleDetails() {
   const [open, setOpen] = useState(false);
   const [year, setYear] = useState<string | null>(null);
+
   return (
     <View
       style={{
@@ -108,30 +109,34 @@ const styles = StyleSheet.create({
   },
 
   label: {
-    fontSize: 14,
+    fontSize: 18,
+    marginHorizontal: 40,
     color: "#6B7280",
     marginBottom: 6,
+    fontWeight: "400",
   },
 
   selectBox: {
-    height: 48,
+    height: 70,
     borderWidth: 1,
     borderColor: "#E5E7EB",
     borderRadius: 10,
-    paddingHorizontal: 12,
-    backgroundColor: "#000", // matches image
+    padding: 10,
+    backgroundColor: "#E8E8E8", // matches image
+    marginHorizontal: 40,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
   },
 
   value: {
-    fontSize: 16,
+    fontSize: 18,
     color: "#9CA3AF", // placeholder color
+    marginHorizontal: 20,
   },
 
   selectedValue: {
-    color: "#fff",
+    color: "#09071b",
   },
 
   overlay: {
@@ -142,7 +147,7 @@ const styles = StyleSheet.create({
   },
 
   dropdown: {
-    backgroundColor: "#fff",
+    backgroundColor: "#0F172A",
     borderRadius: 10,
     overflow: "hidden",
   },
@@ -156,5 +161,7 @@ const styles = StyleSheet.create({
 
   optionText: {
     fontSize: 16,
+    color: "#fff",
+    fontWeight: "400",
   },
 });
