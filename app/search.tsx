@@ -1,7 +1,8 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { Link, router } from "expo-router";
+import { router } from "expo-router";
 import {
     Image,
+    ImageBackground,
     Pressable,
     StyleSheet,
     Text,
@@ -9,34 +10,29 @@ import {
     View,
 } from "react-native";
 
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
-
 export default function searchInput() {
   return (
     <View style={{ display: "flex", flexDirection: "column", gap: 5 }}>
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          marginTop: 20,
-          marginHorizontal: 30,
-        }}
+      <ImageBackground
+        source={require(".././assets/images/image 23.png")}
+        style={styles.wrapper}
+        resizeMode="cover"
       >
-        <Text style={{ fontSize: 25, fontWeight: "500" }}>See Tyres</Text>
+        <View style={styles.overlay} />
 
-        <Link href={"/"}>
-          <FontAwesome5 name="long-arrow-alt-right" size={34} color="black" />
-        </Link>
-      </View>
-
-      <View style={styles.wrapper}>
         {/* Input container */}
         <View style={styles.inputContainer}>
           <Ionicons name="search" size={20} color="#9CA3AF" />
-          <TextInput placeholder="Search" style={styles.input} />
+          <TextInput placeholder="Search" style={styles.input} autoFocus />
         </View>
-      </View>
+
+        <Pressable
+          style={styles.iconButton}
+          onPress={() => router.push("/description")}
+        >
+          <Ionicons name="options-outline" size={30} />
+        </Pressable>
+      </ImageBackground>
 
       <Pressable
         onPress={() => router.push("/description")}
@@ -81,8 +77,8 @@ export default function searchInput() {
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
-            <Ionicons name="star" size={24} color="grey" />
-            <Ionicons name="star" size={24} color="grey" />
+            <Ionicons name="star" size={24} color="#D1D7E4" />
+            <Ionicons name="star" size={24} color="#D1D7E4" />
           </View>
           <Text style={styles.text}>Terra Former Tractor 2018</Text>
           <Text style={styles.text}>$170.00</Text>
@@ -107,7 +103,7 @@ export default function searchInput() {
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
-            <Ionicons name="star" size={24} color="grey" />
+            <Ionicons name="star" size={24} color="#D1D7E8" />
           </View>
           <Text style={styles.text}>Terra Former Tractor 2023</Text>
           <Text style={styles.text}>$200.00</Text>
@@ -178,7 +174,7 @@ export default function searchInput() {
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
-            <Ionicons name="star" size={24} color="grey" />
+            <Ionicons name="star" size={24} color="#D1D7E4" />
           </View>
           <Text style={styles.text}>Terra Former Tractor 2023</Text>
           <Text style={styles.text}>$200.00</Text>
@@ -191,7 +187,8 @@ export default function searchInput() {
 const styles = StyleSheet.create({
   wrapper: {
     flexDirection: "row",
-    marginTop: 40,
+    height: 170,
+    backgroundColor: "#0F1729",
     alignItems: "center",
     paddingHorizontal: 16,
     gap: 12,
@@ -214,7 +211,6 @@ const styles = StyleSheet.create({
   },
   card: {
     flexDirection: "row",
-
     alignItems: "center",
     padding: "auto",
     backgroundColor: "#E9E9E9",
@@ -235,5 +231,15 @@ const styles = StyleSheet.create({
     marginTop: 0,
     borderRadius: 10,
     backgroundColor: "#D1D7E4",
+  },
+  iconButton: {
+    padding: 10,
+    backgroundColor: "#D1D7E4",
+    borderRadius: 12,
+  },
+
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(2, 2, 19, 0.53)", // blue overlay
   },
 });

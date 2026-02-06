@@ -1,7 +1,7 @@
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { Link, router } from "expo-router";
+import { Link, useRouter } from "expo-router";
 import {
   Image,
   ImageBackground,
@@ -12,6 +12,8 @@ import {
 } from "react-native";
 
 export default function Index() {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -50,7 +52,7 @@ export default function Index() {
 
               <Text style={styles.input}> Search Service...</Text>
             </Pressable>
-            {/* Notification icon (outside input) */}
+            {/* Option icon (outside input) */}
             <Pressable style={styles.iconButton}>
               <Ionicons name="options-outline" size={30} />
             </Pressable>

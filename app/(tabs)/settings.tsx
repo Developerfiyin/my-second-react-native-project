@@ -4,7 +4,8 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Fontisto from "@expo/vector-icons/Fontisto";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { StyleSheet, Text, View } from "react-native";
+import { router } from "expo-router";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function ProfilePage() {
   return (
@@ -18,26 +19,20 @@ export default function ProfilePage() {
 
       <Text
         style={{
-          fontWeight: "bold",
-          textAlign: "center",
-          marginTop: 10,
-          fontSize: 30,
+          textAlign: "left",
+          padding: 20,
+          fontSize: 18,
+          fontWeight: "500",
         }}
       >
-        Nick Jonas
-      </Text>
-      <Text style={{ fontSize: 15, textAlign: "center", fontWeight: "500" }}>
-        nickjonas@gmail.com
-      </Text>
-      <Text style={{ textAlign: "left", padding: 20, fontSize: 18 }}>
-        Account
+        Settings Hub
       </Text>
 
-      <View style={styles.account}>
+      <Pressable style={styles.account} onPress={() => router.push("/account")}>
         <FontAwesome5 name="user-circle" size={30} color="black" />
-        <Text style={styles.text}>Profile Information</Text>
+        <Text style={styles.text}>Account Information</Text>
         <Feather name="arrow-right" size={30} color="black" />
-      </View>
+      </Pressable>
 
       <View style={styles.account}>
         <Fontisto name="locked" size={30} color="black" />
@@ -64,6 +59,39 @@ export default function ProfilePage() {
           color="black"
         />
         <Text style={styles.text}>About Us</Text>
+        <Feather name="arrow-right" size={30} color="black" />
+      </View>
+
+      <View style={styles.account}>
+        <FontAwesome name="question-circle-o" size={30} color="black" />
+        <Text style={styles.text}>Search FAQ</Text>
+        <Feather name="arrow-right" size={30} color="black" />
+      </View>
+
+      <View style={styles.account}>
+        <Feather name="log-out" size={30} color="black" />
+        <Text style={styles.text}>Log Out</Text>
+        <Feather name="arrow-right" size={30} color="black" />
+      </View>
+
+      <Text
+        style={{
+          textAlign: "left",
+          padding: 20,
+          fontSize: 18,
+          fontWeight: "500",
+        }}
+      >
+        App
+      </Text>
+
+      <View style={styles.account}>
+        <MaterialCommunityIcons
+          name="vector-triangle"
+          size={30}
+          color="black"
+        />
+        <Text style={styles.text}>Log Out</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
     </View>
