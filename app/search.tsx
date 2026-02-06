@@ -157,6 +157,31 @@ export default function searchInput() {
           <Text style={styles.text}> $1000.00</Text>
         </View>
       </View>
+
+      <View style={styles.card}>
+        <View style={styles.image}>
+          <Image
+            source={require("../assets/images/image 21.png")}
+            style={{
+              width: 96,
+              height: 90,
+              marginHorizontal: 10,
+            }}
+          />
+        </View>
+
+        <View>
+          <View style={{ flexDirection: "row", gap: 10 }}>
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="grey" />
+          </View>
+          <Text style={styles.text}>Terra Former Tractor 2023</Text>
+          <Text style={styles.text}>$200.00</Text>
+        </View>
+      </View>
     </View>
   );
 }
