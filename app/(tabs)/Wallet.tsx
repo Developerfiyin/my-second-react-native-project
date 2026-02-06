@@ -21,11 +21,22 @@ export default function PaymentMethod() {
         style={{
           textAlign: "left",
           padding: 20,
-          fontSize: 18,
+          fontSize: 20,
           fontWeight: "500",
         }}
       >
-        Settings Hub
+        See your payment method
+      </Text>
+
+      <Text
+        style={{
+          textAlign: "left",
+          padding: 20,
+          fontSize: 16,
+          fontWeight: "500",
+        }}
+      >
+        Pay through any of these means
       </Text>
 
       <Pressable style={styles.account} onPress={() => router.push("/account")}>
@@ -53,16 +64,6 @@ export default function PaymentMethod() {
       </View>
 
       <View style={styles.account}>
-        <MaterialCommunityIcons
-          name="information-variant-circle-outline"
-          size={30}
-          color="black"
-        />
-        <Text style={styles.text}>About Us</Text>
-        <Feather name="arrow-right" size={30} color="black" />
-      </View>
-
-      <View style={styles.account}>
         <FontAwesome name="question-circle-o" size={30} color="black" />
         <Text style={styles.text}>Search FAQ</Text>
         <Feather name="arrow-right" size={30} color="black" />
@@ -82,7 +83,7 @@ export default function PaymentMethod() {
           fontWeight: "500",
         }}
       >
-        App
+        Webmoney
       </Text>
 
       <View style={styles.account}>
