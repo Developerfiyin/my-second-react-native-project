@@ -52,7 +52,7 @@ export default function Index() {
 
               <Text style={styles.input}> Search Service...</Text>
             </Pressable>
-            {/* Notification icon (outside input) */}
+            {/* Option icon (outside input) */}
             <Pressable style={styles.iconButton}>
               <Ionicons name="options-outline" size={30} />
             </Pressable>
