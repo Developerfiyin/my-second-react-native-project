@@ -255,7 +255,7 @@ export default function Index() {
       >
         <View>
           <Image
-            source={require("../../assets/images/image 15.png")}
+            source={require("../../assets/images/image 1.png")}
             style={styles.icon}
           />
           <Text style={{ color: "#0F172A" }}> Car Wash</Text>
@@ -276,7 +276,7 @@ export default function Index() {
 
         <View>
           <Image
-            source={require("../../assets/images/image 15.png")}
+            source={require("../../assets/images/image 1.png")}
             style={styles.icon}
           />
           <Text style={{ color: "#0F172A" }}> Change Tyres</Text>

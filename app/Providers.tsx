@@ -69,7 +69,7 @@ export default function Provider() {
       </View>
 
       <View style={styles.card}>
-        <Image source={require("../assets/images/image 15.png")} />
+        <Image source={require("../assets/images/image 1.png")} />
         <View>
           <Text>Williams Shakespare</Text>
           <Text>Los Angeles</Text>
