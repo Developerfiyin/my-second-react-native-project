@@ -21,8 +21,8 @@ export default function Provider() {
           marginTop: 20,
         }}
       >
-        <Link href={"/(tabs)"} style={{ right: "15%" }}>
-          <FontAwesome5 name="long-arrow-alt-left" size={34} color="black" />
+        <Link href={"/"} style={{ right: "15%" }}>
+          <FontAwesome5 name="long-arrow-alt-left" size={34} color="#0F172A" />
         </Link>
         <Text style={{ fontSize: 25, fontWeight: "500" }}>See Technicians</Text>
       </View>
