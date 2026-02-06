@@ -26,6 +26,11 @@ export default function AccountScreen() {
           +234 903 366 1958
         </Text>
       </View>
+
+      <View style={styles.View}>
+        <Text style={{ color: "grey", fontSize: 18 }}> Date of Birth</Text>
+        <Text style={{ color: "#0F172A", fontSize: 20 }}>24/07/2001</Text>
+      </View>
     </View>
   );
 }
