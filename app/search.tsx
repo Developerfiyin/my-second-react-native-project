@@ -123,15 +123,15 @@ export default function searchInput() {
         </View>
 
         <View>
+          <View style={{ flexDirection: "row", gap: 10 }}>
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+          </View>
           <Text style={styles.text}>Terra Former Tractor 2025</Text>
           <Text style={styles.text}> $1000.00</Text>
-
-          <View style={{ flexDirection: "row", gap: 10 }}>
-            <Ionicons name="star" size={24} color="black" />
-            <Text>4.8</Text>
-            <Ionicons name="time-outline" size={24} color="black" />
-            <Text>5 min</Text>
-          </View>
         </View>
       </View>
 
