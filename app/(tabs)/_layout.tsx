@@ -32,6 +32,21 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
+        name="settings"
+        options={{
+          title: "settings",
+          tabBarIcon: ({ color, focused }) => {
+            return focused ? (
+              <Entypo name="location-pin" size={30} color="darkgrey" />
+            ) : (
+              <EvilIcons name="location" size={30} color="black" />
+            );
+          },
+          tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },
+        }}
+      />
+
+      <Tabs.Screen
         name="Map"
         options={{
           title: "Map",

@@ -36,7 +36,7 @@ export default function Provider() {
       </View>
 
       <Pressable
-        onPress={() => router.push("/settings")}
+        onPress={() => router.push("/profile")}
         style={({ pressed }) => [styles.card, pressed && styles.pressed]}
       >
         <Image source={require("../assets/images/image 14.png")} />
