@@ -22,7 +22,7 @@ export default function searchInput() {
           marginTop: 20,
         }}
       >
-        <Link href={"/(tabs)"} style={{ right: "15%" }}>
+        <Link href={"/ervice"} style={{ right: "15%" }}>
           <FontAwesome5 name="long-arrow-alt-left" size={34} color="black" />
         </Link>
         <Text style={{ fontSize: 25, fontWeight: "500" }}>See Tyres</Text>
@@ -40,10 +40,13 @@ export default function searchInput() {
         onPress={() => router.push("/profile")}
         style={({ pressed }) => [styles.card, pressed && styles.pressed]}
       >
-        <Image
-          source={require("../assets/images/image 20.png")}
-          style={styles.image}
-        />
+        <View style={styles.image}>
+          <Image
+            source={require("../assets/images/image 20.png")}
+            style={{ width: 96, height: 99 }}
+          />
+        </View>
+
         <View>
           <View style={{ flexDirection: "row", gap: 10 }}>
             <Ionicons name="star" size={24} color="gold" />
@@ -85,10 +88,22 @@ export default function searchInput() {
       </View>
 
       <View style={styles.card}>
-        <Image source={require("../assets/images/image 15.png")} />
+        <Image
+          source={require("../assets/images/image 21.png")}
+          style={{
+            left: 4,
+            width: 103,
+            height: 96,
+
+            borderRadius: 10,
+            padding: 40,
+            backgroundColor: "#D1D7E4",
+            opacity: 1,
+          }}
+        />
         <View>
-          <Text>Williams Shakespare</Text>
-          <Text>Los Angeles</Text>
+          <Text>Terra Former Tractor 2023</Text>
+          <Text>$200.00</Text>
 
           <View style={{ flexDirection: "row", gap: 10 }}>
             <Ionicons name="star" size={24} color="black" />
@@ -150,7 +165,7 @@ export default function searchInput() {
           <Text>Oladele Micheal</Text>
           <Text>Lekki Phase 1, Lagos</Text>
 
-          <View style={{ flexDirection: "row", gap: 10 }}>
+          <View style={{ flexDirection: "row", gap: 20 }}>
             <Ionicons name="star" size={24} color="black" />
             <Text>4.8</Text>
             <Ionicons name="time-outline" size={24} color="black" />
@@ -189,7 +204,7 @@ const styles = StyleSheet.create({
   card: {
     flexDirection: "row",
     alignItems: "center",
-    padding: 16,
+    padding: "auto",
     backgroundColor: "#E9E9E9",
     marginTop: 20,
     marginHorizontal: 20,
@@ -201,18 +216,12 @@ const styles = StyleSheet.create({
     opacity: 0.7,
   },
   text: {
-    marginTop: 10,
-    marginBottom: 10,
+    color: "#",
   },
   image: {
-    // width: "50%",
-    // height: "70%",
-    borderRadius: 10,
-    width: 96,
-    height: 96,
-    left: 4,
     opacity: 1,
-    padding: 20,
+    marginTop: 0,
+    borderRadius: 10,
     backgroundColor: "#D1D7E4",
   },
 });

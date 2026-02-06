@@ -39,6 +39,8 @@ export default function Index() {
               onPress={() => router.push("/search")}
               style={styles.inputContainer}
             >
+              {/* Input container */}
+
               <Ionicons
                 name="search"
                 size={20}
