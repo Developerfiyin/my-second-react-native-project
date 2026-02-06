@@ -18,14 +18,16 @@ export default function searchInput() {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center",
+          justifyContent: "space-between",
           marginTop: 20,
+          marginHorizontal: 30,
         }}
       >
-        <Link href={"/ervice"} style={{ right: "15%" }}>
-          <FontAwesome5 name="long-arrow-alt-left" size={34} color="black" />
-        </Link>
         <Text style={{ fontSize: 25, fontWeight: "500" }}>See Tyres</Text>
+
+        <Link href={"/profile"} style={{}}>
+          <FontAwesome5 name="long-arrow-alt-right" size={34} color="black" />
+        </Link>
       </View>
 
       <View style={styles.wrapper}>
