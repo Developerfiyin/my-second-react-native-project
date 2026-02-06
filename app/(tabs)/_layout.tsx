@@ -2,6 +2,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import Entypo from "@expo/vector-icons/Entypo";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import Feather from "@expo/vector-icons/Feather";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import { Tabs } from "expo-router";
 
 export default function TabsLayout() {
@@ -55,6 +56,21 @@ export default function TabsLayout() {
               <AntDesign name="setting" size={30} color="darkgrey" />
             ) : (
               <Feather name="settings" size={30} color="black" />
+            );
+          },
+          tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },
+        }}
+      />
+
+      <Tabs.Screen
+        name="Wallet"
+        options={{
+          title: "Wallet",
+          tabBarIcon: ({ color, focused }) => {
+            return focused ? (
+              <FontAwesome5 name="wallet" size={30} color="black" />
+            ) : (
+              <Entypo name="wallet" size={30} color="black" />
             );
           },
           tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },
