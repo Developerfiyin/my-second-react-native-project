@@ -55,7 +55,7 @@ export default function TabsLayout() {
             return focused ? (
               <Ionicons name="wallet-outline" size={30} color="darkgrey" />
             ) : (
-              <Entypo name="wallet" size={30} color="black" />
+              <Ionicons name="wallet-outline" size={30} color="black" />
             );
           },
           tabBarLabelStyle: { fontSize: 15, color: "grey", paddingTop: 9 },
