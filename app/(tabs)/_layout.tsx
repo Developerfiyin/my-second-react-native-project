@@ -2,6 +2,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import Entypo from "@expo/vector-icons/Entypo";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import Feather from "@expo/vector-icons/Feather";
+import Ionicons from "@expo/vector-icons/Ionicons";
 import { Tabs } from "expo-router";
 
 export default function TabsLayout() {
@@ -28,7 +29,7 @@ export default function TabsLayout() {
               <AntDesign name="home" size={30} color="black" />
             );
           },
-          tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },
+          tabBarLabelStyle: { fontSize: 15, color: "grey", paddingTop: 9 },
         }}
       />
       <Tabs.Screen
@@ -42,7 +43,22 @@ export default function TabsLayout() {
               <EvilIcons name="location" size={30} color="black" />
             );
           },
-          tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },
+          tabBarLabelStyle: { fontSize: 15, color: "grey", paddingTop: 9 },
+        }}
+      />
+
+      <Tabs.Screen
+        name="Wallet"
+        options={{
+          title: "Wallet",
+          tabBarIcon: ({ color, focused }) => {
+            return focused ? (
+              <Ionicons name="wallet-outline" size={30} color="darkgrey" />
+            ) : (
+              <Ionicons name="wallet-outline" size={30} color="black" />
+            );
+          },
+          tabBarLabelStyle: { fontSize: 15, color: "grey", paddingTop: 9 },
         }}
       />
 
@@ -57,7 +73,7 @@ export default function TabsLayout() {
               <Feather name="settings" size={30} color="black" />
             );
           },
-          tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },
+          tabBarLabelStyle: { fontSize: 15, color: "grey", paddingTop: 9 },
         }}
       />
     </Tabs>

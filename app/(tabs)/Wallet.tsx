@@ -7,7 +7,7 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { router } from "expo-router";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
-export default function ProfilePage() {
+export default function PaymentMethod() {
   return (
     <View style={styles.View}>
       <FontAwesome
@@ -21,11 +21,22 @@ export default function ProfilePage() {
         style={{
           textAlign: "left",
           padding: 20,
-          fontSize: 18,
+          fontSize: 20,
           fontWeight: "500",
         }}
       >
-        Settings Hub
+        See your payment method
+      </Text>
+
+      <Text
+        style={{
+          textAlign: "left",
+          padding: 20,
+          fontSize: 16,
+          fontWeight: "500",
+        }}
+      >
+        Pay through any of these means
       </Text>
 
       <Pressable style={styles.account} onPress={() => router.push("/account")}>
@@ -53,22 +64,6 @@ export default function ProfilePage() {
       </View>
 
       <View style={styles.account}>
-        <MaterialCommunityIcons
-          name="information-variant-circle-outline"
-          size={30}
-          color="black"
-        />
-        <Text style={styles.text}>About Us</Text>
-        <Feather name="arrow-right" size={30} color="black" />
-      </View>
-
-      <View style={styles.account}>
-        <FontAwesome name="question-circle-o" size={30} color="black" />
-        <Text style={styles.text}>Search FAQ</Text>
-        <Feather name="arrow-right" size={30} color="black" />
-      </View>
-
-      <View style={styles.account}>
         <Feather name="log-out" size={30} color="black" />
         <Text style={styles.text}>Log Out</Text>
         <Feather name="arrow-right" size={30} color="black" />
@@ -82,7 +77,7 @@ export default function ProfilePage() {
           fontWeight: "500",
         }}
       >
-        App
+        Webmoney
       </Text>
 
       <View style={styles.account}>
