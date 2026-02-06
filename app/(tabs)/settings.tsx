@@ -30,7 +30,7 @@ export default function ProfilePage() {
 
       <Pressable style={styles.account} onPress={() => router.push("/account")}>
         <FontAwesome5 name="user-circle" size={30} color="black" />
-        <Text style={styles.text}>Profile Information</Text>
+        <Text style={styles.text}>Account Information</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </Pressable>
 
