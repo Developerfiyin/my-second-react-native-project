@@ -64,12 +64,6 @@ export default function PaymentMethod() {
       </View>
 
       <View style={styles.account}>
-        <FontAwesome name="question-circle-o" size={30} color="black" />
-        <Text style={styles.text}>Search FAQ</Text>
-        <Feather name="arrow-right" size={30} color="black" />
-      </View>
-
-      <View style={styles.account}>
         <Feather name="log-out" size={30} color="black" />
         <Text style={styles.text}>Log Out</Text>
         <Feather name="arrow-right" size={30} color="black" />
