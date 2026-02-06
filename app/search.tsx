@@ -88,29 +88,27 @@ export default function searchInput() {
       </View>
 
       <View style={styles.card}>
-        <Image
-          source={require("../assets/images/image 21.png")}
-          style={{
-            left: 4,
-            width: 103,
-            height: 96,
+        <View style={styles.image}>
+          <Image
+            source={require("../assets/images/image 21.png")}
+            style={{
+              width: 96,
+              height: 90,
+              marginHorizontal: 10,
+            }}
+          />
+        </View>
 
-            borderRadius: 10,
-            padding: 40,
-            backgroundColor: "#D1D7E4",
-            opacity: 1,
-          }}
-        />
         <View>
-          <Text>Terra Former Tractor 2023</Text>
-          <Text>$200.00</Text>
-
           <View style={{ flexDirection: "row", gap: 10 }}>
-            <Ionicons name="star" size={24} color="black" />
-            <Text>4.8</Text>
-            <Ionicons name="time-outline" size={24} color="black" />
-            <Text>5 min</Text>
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="gold" />
+            <Ionicons name="star" size={24} color="grey" />
           </View>
+          <Text style={styles.text}>Terra Former Tractor 2023</Text>
+          <Text style={styles.text}>$200.00</Text>
         </View>
       </View>
 
@@ -203,6 +201,7 @@ const styles = StyleSheet.create({
   },
   card: {
     flexDirection: "row",
+
     alignItems: "center",
     padding: "auto",
     backgroundColor: "#E9E9E9",
