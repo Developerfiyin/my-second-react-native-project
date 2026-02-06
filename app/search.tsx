@@ -25,7 +25,7 @@ export default function searchInput() {
       >
         <Text style={{ fontSize: 25, fontWeight: "500" }}>See Tyres</Text>
 
-        <Link href={"/description"}>
+        <Link href={"/"}>
           <FontAwesome5 name="long-arrow-alt-right" size={34} color="black" />
         </Link>
       </View>
@@ -39,7 +39,7 @@ export default function searchInput() {
       </View>
 
       <Pressable
-        onPress={() => router.push("/profile")}
+        onPress={() => router.push("/description")}
         style={({ pressed }) => [styles.card, pressed && styles.pressed]}
       >
         <View style={styles.image}>
