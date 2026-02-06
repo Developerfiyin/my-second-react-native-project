@@ -19,6 +19,13 @@ export default function AccountScreen() {
           livinglogos@gmail.com
         </Text>
       </View>
+
+      <View style={styles.View}>
+        <Text style={{ color: "grey", fontSize: 18 }}> Phone</Text>
+        <Text style={{ color: "#0F172A", fontSize: 20 }}>
+          +234 903 366 1958
+        </Text>
+      </View>
     </View>
   );
 }
