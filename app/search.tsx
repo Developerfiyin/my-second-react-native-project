@@ -2,6 +2,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { router } from "expo-router";
 import {
     Image,
+    ImageBackground,
     Pressable,
     StyleSheet,
     Text,
@@ -9,11 +10,16 @@ import {
     View,
 } from "react-native";
 
-
 export default function searchInput() {
   return (
     <View style={{ display: "flex", flexDirection: "column", gap: 5 }}>
-      <View style={styles.wrapper}>
+      <ImageBackground
+        source={require(".././assets/images/image 23.png")}
+        style={styles.wrapper}
+        resizeMode="cover"
+      >
+        <View style={styles.overlay} />
+
         {/* Input container */}
         <View style={styles.inputContainer}>
           <Ionicons name="search" size={20} color="#9CA3AF" />
@@ -26,7 +32,7 @@ export default function searchInput() {
         >
           <Ionicons name="options-outline" size={30} />
         </Pressable>
-      </View>
+      </ImageBackground>
 
       <Pressable
         onPress={() => router.push("/description")}
@@ -181,7 +187,8 @@ export default function searchInput() {
 const styles = StyleSheet.create({
   wrapper: {
     flexDirection: "row",
-    marginTop: 40,
+    height: 170,
+    backgroundColor: "#0F1729",
     alignItems: "center",
     paddingHorizontal: 16,
     gap: 12,
@@ -229,5 +236,10 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#D1D7E4",
     borderRadius: 12,
+  },
+
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(2, 2, 19, 0.53)", // blue overlay
   },
 });
