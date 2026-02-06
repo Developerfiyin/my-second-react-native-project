@@ -2,6 +2,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import Fontisto from "@expo/vector-icons/Fontisto";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { router } from "expo-router";
@@ -42,31 +43,31 @@ export default function PaymentMethod() {
       <Pressable style={styles.account} onPress={() => router.push("/account")}>
         <FontAwesome5 name="user-circle" size={30} color="black" />
         <Text style={styles.text}>Paypal</Text>
-        <Feather name="arrow-right" size={30} color="black" />
+        <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </Pressable>
 
       <View style={styles.account}>
         <Fontisto name="locked" size={30} color="black" />
         <Text style={styles.text}>Credit Card</Text>
-        <Feather name="arrow-right" size={30} color="black" />
+        <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
 
       <View style={styles.account}>
         <MaterialCommunityIcons name="bell-outline" size={30} color="black" />
         <Text style={styles.text}>Apple Pay</Text>
-        <Feather name="arrow-right" size={30} color="black" />
+        <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
 
       <View style={styles.account}>
         <AntDesign name="global" size={30} color="black" />
         <Text style={styles.text}>Google Pay</Text>
-        <Feather name="arrow-right" size={30} color="black" />
+        <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
 
       <View style={styles.account}>
         <Feather name="log-out" size={30} color="black" />
         <Text style={styles.text}>Wise</Text>
-        <Feather name="arrow-right" size={30} color="black" />
+        <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
 
       <Text
@@ -87,7 +88,7 @@ export default function PaymentMethod() {
           color="black"
         />
         <Text style={styles.text}>Webmoney</Text>
-        <Feather name="arrow-right" size={30} color="black" />
+        <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
     </View>
   );
