@@ -34,7 +34,7 @@ export default function searchInput() {
         {/* Input container */}
         <View style={styles.inputContainer}>
           <Ionicons name="search" size={20} color="#9CA3AF" />
-          <TextInput placeholder="Search" style={styles.input} />
+          <TextInput placeholder="Search" style={styles.input} autoFocus />
         </View>
       </View>
 
