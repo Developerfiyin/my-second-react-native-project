@@ -79,8 +79,8 @@ export default function searchInput() {
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
-            <Ionicons name="star" size={24} color="#D1D7E8" />
-            <Ionicons name="star" size={24} color="#D1D7E8" />
+            <Ionicons name="star" size={24} color="grey" />
+            <Ionicons name="star" size={24} color="grey" />
           </View>
           <Text style={styles.text}>Terra Former Tractor 2018</Text>
           <Text style={styles.text}>$170.00</Text>
@@ -113,10 +113,18 @@ export default function searchInput() {
       </View>
 
       <View style={styles.card}>
-        <Image source={require("../assets/images/image.png")} />
+        <View style={styles.image}>
+          <Image
+            source={require("../assets/images/image 22.png")}
+            style={{
+              marginHorizontal: 10,
+            }}
+          />
+        </View>
+
         <View>
-          <Text>Oladele Micheal</Text>
-          <Text>Lekki Phase 1, Lagos</Text>
+          <Text style={styles.text}>Terra Former Tractor 2025</Text>
+          <Text style={styles.text}> $1000.00</Text>
 
           <View style={{ flexDirection: "row", gap: 10 }}>
             <Ionicons name="star" size={24} color="black" />
@@ -215,7 +223,7 @@ const styles = StyleSheet.create({
     opacity: 0.7,
   },
   text: {
-    color: "#",
+    color: "#0F172A",
   },
   image: {
     opacity: 1,
