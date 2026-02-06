@@ -85,6 +85,10 @@ export default function PaymentMethod() {
         <Text style={styles.text}>Webmoney</Text>
         <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
+
+      <Pressable style={styles.pressable}>
+        <Text style={styles.text1}> Continue</Text>
+      </Pressable>
     </View>
   );
 }
@@ -125,5 +129,19 @@ const styles = StyleSheet.create({
     borderColor: "#d3d3d3",
     marginHorizontal: "auto",
     marginBottom: 1,
+  },
+
+  pressable: {
+    backgroundColor: "#0f172a",
+    marginTop: 40,
+    padding: 20,
+    borderRadius: 10,
+    marginHorizontal: 20,
+  },
+  text1: {
+    color: "#ffff",
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });
