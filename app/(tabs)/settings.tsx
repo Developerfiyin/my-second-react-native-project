@@ -4,7 +4,8 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Fontisto from "@expo/vector-icons/Fontisto";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { StyleSheet, Text, View } from "react-native";
+import { router } from "expo-router";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function ProfilePage() {
   return (
@@ -27,11 +28,11 @@ export default function ProfilePage() {
         Settings Hub
       </Text>
 
-      <View style={styles.account}>
+      <Pressable style={styles.account} onPress={() => router.push("/account")}>
         <FontAwesome5 name="user-circle" size={30} color="black" />
         <Text style={styles.text}>Profile Information</Text>
         <Feather name="arrow-right" size={30} color="black" />
-      </View>
+      </Pressable>
 
       <View style={styles.account}>
         <Fontisto name="locked" size={30} color="black" />
