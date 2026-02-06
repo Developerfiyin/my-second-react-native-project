@@ -18,19 +18,13 @@ export default function ProfilePage() {
 
       <Text
         style={{
-          fontWeight: "bold",
-          textAlign: "center",
-          marginTop: 10,
-          fontSize: 30,
+          textAlign: "left",
+          padding: 20,
+          fontSize: 18,
+          fontWeight: "500",
         }}
       >
-        Nick Jonas
-      </Text>
-      <Text style={{ fontSize: 15, textAlign: "center", fontWeight: "500" }}>
-        nickjonas@gmail.com
-      </Text>
-      <Text style={{ textAlign: "left", padding: 20, fontSize: 18 }}>
-        Account
+        Settings Hub
       </Text>
 
       <View style={styles.account}>
@@ -69,13 +63,34 @@ export default function ProfilePage() {
 
       <View style={styles.account}>
         <FontAwesome name="question-circle-o" size={30} color="black" />
-        <Text style={styles.text}>Notification</Text>
+        <Text style={styles.text}>Search FAQ</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
 
       <View style={styles.account}>
-        <MaterialCommunityIcons name="bell-outline" size={30} color="black" />
-        <Text style={styles.text}>Notification</Text>
+        <Feather name="log-out" size={30} color="black" />
+        <Text style={styles.text}>Log Out</Text>
+        <Feather name="arrow-right" size={30} color="black" />
+      </View>
+
+      <Text
+        style={{
+          textAlign: "left",
+          padding: 20,
+          fontSize: 18,
+          fontWeight: "500",
+        }}
+      >
+        App
+      </Text>
+
+      <View style={styles.account}>
+        <MaterialCommunityIcons
+          name="vector-triangle"
+          size={30}
+          color="black"
+        />
+        <Text style={styles.text}>Log Out</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
     </View>
