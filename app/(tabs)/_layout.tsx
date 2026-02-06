@@ -32,9 +32,9 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="Map"
         options={{
-          title: "settings",
+          title: "Map",
           tabBarIcon: ({ color, focused }) => {
             return focused ? (
               <Entypo name="location-pin" size={30} color="darkgrey" />
@@ -47,14 +47,14 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
-        name="Map"
+        name="settings"
         options={{
-          title: "Map",
+          title: "Settings",
           tabBarIcon: ({ color, focused }) => {
             return focused ? (
-              <Entypo name="location-pin" size={30} color="darkgrey" />
+              <AntDesign name="setting" size={30} color="darkgrey" />
             ) : (
-              <EvilIcons name="location" size={30} color="black" />
+              <Feather name="settings" size={30} color="black" />
             );
           },
           tabBarLabelStyle: { fontSize: 15, color: "black", paddingTop: 9 },

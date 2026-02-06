@@ -25,7 +25,7 @@ export default function searchInput() {
       >
         <Text style={{ fontSize: 25, fontWeight: "500" }}>See Tyres</Text>
 
-        <Link href={"/profile"}>
+        <Link href={"/description"}>
           <FontAwesome5 name="long-arrow-alt-right" size={34} color="black" />
         </Link>
       </View>

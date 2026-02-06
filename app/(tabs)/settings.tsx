@@ -4,7 +4,7 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Fontisto from "@expo/vector-icons/Fontisto";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function ProfilePage() {
   return (
@@ -16,10 +16,6 @@ export default function ProfilePage() {
         style={styles.font}
       />
 
-      <Image
-        source={require("../../assets/images/image 32.png")}
-        style={{ marginHorizontal: "auto", marginTop: 50 }}
-      />
       <Text
         style={{
           fontWeight: "bold",
