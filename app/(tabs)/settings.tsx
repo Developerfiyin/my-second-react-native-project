@@ -66,6 +66,18 @@ export default function ProfilePage() {
         <Text style={styles.text}>About Us</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
+
+      <View style={styles.account}>
+        <FontAwesome name="question-circle-o" size={30} color="black" />
+        <Text style={styles.text}>Notification</Text>
+        <Feather name="arrow-right" size={30} color="black" />
+      </View>
+
+      <View style={styles.account}>
+        <MaterialCommunityIcons name="bell-outline" size={30} color="black" />
+        <Text style={styles.text}>Notification</Text>
+        <Feather name="arrow-right" size={30} color="black" />
+      </View>
     </View>
   );
 }
