@@ -1,12 +1,7 @@
-import AntDesign from "@expo/vector-icons/AntDesign";
-import Feather from "@expo/vector-icons/Feather";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
-import Fontisto from "@expo/vector-icons/Fontisto";
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { router } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function PaymentMethod() {
   return (
@@ -41,31 +36,34 @@ export default function PaymentMethod() {
       </Text>
 
       <Pressable style={styles.account} onPress={() => router.push("/account")}>
-        <FontAwesome5 name="user-circle" size={30} color="black" />
+        <Image source={require("../../assets/images/paypal.png")} />
         <Text style={styles.text}>Paypal</Text>
         <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </Pressable>
 
       <View style={styles.account}>
-        <Fontisto name="locked" size={30} color="black" />
+        <Image source={require("../../assets/images/Group 15.png")} />
+
         <Text style={styles.text}>Credit Card</Text>
         <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
 
       <View style={styles.account}>
-        <MaterialCommunityIcons name="bell-outline" size={30} color="black" />
+        <Image source={require("../../assets/images/apple.png")} />
+
         <Text style={styles.text}>Apple Pay</Text>
         <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
 
       <View style={styles.account}>
-        <AntDesign name="global" size={30} color="black" />
+        <Image source={require("../../assets/images/google.png")} />
         <Text style={styles.text}>Google Pay</Text>
         <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
 
       <View style={styles.account}>
-        <Feather name="log-out" size={30} color="black" />
+        <Image source={require("../../assets/images/wise.png")} />
+
         <Text style={styles.text}>Wise</Text>
         <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
@@ -82,11 +80,8 @@ export default function PaymentMethod() {
       </Text>
 
       <View style={styles.account}>
-        <MaterialCommunityIcons
-          name="vector-triangle"
-          size={30}
-          color="black"
-        />
+        <Image source={require("../../assets/images/webmoney.png")} />
+
         <Text style={styles.text}>Webmoney</Text>
         <FontAwesome6 name="circle-dot" size={24} color="grey" />
       </View>
