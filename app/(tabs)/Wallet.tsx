@@ -41,31 +41,31 @@ export default function PaymentMethod() {
 
       <Pressable style={styles.account} onPress={() => router.push("/account")}>
         <FontAwesome5 name="user-circle" size={30} color="black" />
-        <Text style={styles.text}>Account Information</Text>
+        <Text style={styles.text}>Paypal</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </Pressable>
 
       <View style={styles.account}>
         <Fontisto name="locked" size={30} color="black" />
-        <Text style={styles.text}>Password & Security</Text>
+        <Text style={styles.text}>Credit Card</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
 
       <View style={styles.account}>
         <MaterialCommunityIcons name="bell-outline" size={30} color="black" />
-        <Text style={styles.text}>Notification</Text>
+        <Text style={styles.text}>Apple Pay</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
 
       <View style={styles.account}>
         <AntDesign name="global" size={30} color="black" />
-        <Text style={styles.text}>Language</Text>
+        <Text style={styles.text}>Google Pay</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
 
       <View style={styles.account}>
         <Feather name="log-out" size={30} color="black" />
-        <Text style={styles.text}>Log Out</Text>
+        <Text style={styles.text}>Wise</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
 
@@ -86,7 +86,7 @@ export default function PaymentMethod() {
           size={30}
           color="black"
         />
-        <Text style={styles.text}>App Update</Text>
+        <Text style={styles.text}>Webmoney</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
     </View>
