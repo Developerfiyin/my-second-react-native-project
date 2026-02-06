@@ -91,7 +91,7 @@ export default function ProfilePage() {
           size={30}
           color="black"
         />
-        <Text style={styles.text}>Log Out</Text>
+        <Text style={styles.text}>App Update</Text>
         <Feather name="arrow-right" size={30} color="black" />
       </View>
     </View>
