@@ -7,7 +7,12 @@ export default function SignupScreen() {
       <View style={styles.wrapper}>
         {/* Input container */}
         <View style={styles.inputContainer}>
-          <Feather name="user" size={24} color="black" />
+          <Feather name="user" size={24} color="grey" />
+          <TextInput placeholder="Username" style={styles.input} autoFocus />
+        </View>
+
+        <View style={styles.inputContainer}>
+          <Feather name="mail" size={30} color="grey" />
           <TextInput placeholder="Username" style={styles.input} autoFocus />
         </View>
       </View>
@@ -16,7 +21,7 @@ export default function SignupScreen() {
 }
 const styles = StyleSheet.create({
   wrapper: {
-    flexDirection: "row",
+    flexDirection: "column",
     height: 170,
     backgroundColor: "#ffff",
     alignItems: "center",
@@ -32,6 +37,9 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     paddingHorizontal: 12,
     height: 79,
+    top: 40,
+    gap: 20,
+    columnGap: 20,
   },
 
   input: {
