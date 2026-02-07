@@ -1,3 +1,5 @@
+import Ionicons from "@expo/vector-icons/Ionicons";
+
 import { Image, StyleSheet, Text, View } from "react-native";
 export default function Description() {
   return (
@@ -26,6 +28,25 @@ export default function Description() {
       >
         <Text style={styles.text}> Terra Former Tractor 2021</Text>
         <Text style={styles.text}>$240.00</Text>
+      </View>
+
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          gap: 10,
+          marginHorizontal: 10,
+        }}
+      >
+        <Text style={{ fontFamily: "300" }}> Light Performer Dirt</Text>
+
+        <View style={{ flexDirection: "row", gap: 10 }}>
+          <Ionicons name="star" size={24} color="gold" />
+          <Ionicons name="star" size={24} color="gold" />
+          <Ionicons name="star" size={24} color="gold" />
+          <Ionicons name="star" size={24} color="gold" />
+          <Ionicons name="star" size={24} color="gold" />
+        </View>
       </View>
     </View>
   );
