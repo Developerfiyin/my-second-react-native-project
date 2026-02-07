@@ -1,7 +1,7 @@
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import Octicons from "@expo/vector-icons/Octicons";
-import { StyleSheet, TextInput, View } from "react-native";
+import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function SignupScreen() {
   return (
@@ -57,6 +57,10 @@ export default function SignupScreen() {
             autoFocus
           />
         </View>
+
+        <Pressable style={styles.pressable}>
+          <Text style={styles.text1}> Sign Up</Text>
+        </Pressable>
       </View>
     </View>
   );
@@ -86,5 +90,18 @@ const styles = StyleSheet.create({
     flex: 1, //  allows typing space
     marginLeft: 8,
     fontSize: 16,
+  },
+  pressable: {
+    backgroundColor: "#0f172a",
+    padding: 20,
+    borderRadius: 10,
+    marginTop: 40,
+    width: "100%",
+  },
+  text1: {
+    color: "#ffff",
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });

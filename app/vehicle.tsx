@@ -1,12 +1,12 @@
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
 import {
-    Modal,
-    Pressable,
-    StyleSheet,
-    Text,
-    TextInput,
-    View,
+  Modal,
+  Pressable,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
 } from "react-native";
 
 const YEARS = ["2026", "2025", "2024", "2023", "2022", "2021", "2020"];
@@ -170,7 +170,6 @@ const styles = StyleSheet.create({
   },
   pressable: {
     backgroundColor: "#0f172a",
-
     padding: 20,
     borderRadius: 10,
     marginHorizontal: 20,
