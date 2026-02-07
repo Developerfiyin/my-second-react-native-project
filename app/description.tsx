@@ -1,6 +1,7 @@
+import AntDesign from "@expo/vector-icons/AntDesign";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 export default function Description() {
   return (
     <View style={{ flexDirection: "column", gap: "10" }}>
@@ -38,7 +39,7 @@ export default function Description() {
           marginHorizontal: 10,
         }}
       >
-        <Text style={{ fontFamily: "300", marginBottom: 10 }}>
+        <Text style={{ fontFamily: "300", marginBottom: 10, marginLeft: 10 }}>
           Light Performer Dirt
         </Text>
 
@@ -72,6 +73,43 @@ export default function Description() {
         egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
         leo.
       </Text>
+
+      <View style={styles.pressable}>
+        <Pressable
+          style={{
+            flexDirection: "row",
+            gap: 10,
+            backgroundColor: "#E9e9e9",
+            marginTop: 30,
+            padding: 20,
+            paddingHorizontal: 30,
+
+            borderRadius: 20,
+          }}
+        >
+          <AntDesign name="message" size={24} color="black" />
+          <Text> Message</Text>
+        </Pressable>
+        <Pressable
+          style={{
+            marginTop: 30,
+            padding: 35,
+            borderRadius: 10,
+            backgroundColor: "#0f1729",
+          }}
+        >
+          <Text
+            style={{
+              color: "#ffff",
+              fontSize: 20,
+              fontWeight: "500",
+              paddingHorizontal: 20,
+            }}
+          >
+            Order Now
+          </Text>
+        </Pressable>
+      </View>
     </View>
   );
 }
@@ -111,5 +149,10 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     marginLeft: 10,
     marginBottom: 25,
+  },
+  pressable: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginHorizontal: 20,
   },
 });
