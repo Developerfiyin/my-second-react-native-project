@@ -14,12 +14,32 @@ export default function SignupScreen() {
 
         <View style={styles.inputContainer}>
           <Feather name="mail" size={30} color="grey" />
-          <TextInput placeholder="Email" style={styles.input} autoFocus />
+          <TextInput
+            placeholder="Email"
+            style={styles.input}
+            keyboardType="email-address"
+            autoFocus
+          />
         </View>
 
         <View style={styles.inputContainer}>
           <Octicons name="key" size={30} color="grey" />
-          <TextInput placeholder="Password" style={styles.input} autoFocus />
+          <TextInput
+            placeholder="Password"
+            style={styles.input}
+            keyboardType="email-address"
+            autoFocus
+          />
+        </View>
+
+        <View style={styles.inputContainer}>
+          <Octicons name="key" size={30} color="grey" />
+          <TextInput
+            placeholder="Password"
+            style={styles.input}
+            keyboardType="email-address"
+            autoFocus
+          />
         </View>
       </View>
     </View>
@@ -31,12 +51,11 @@ const styles = StyleSheet.create({
     height: 170,
     backgroundColor: "#ffff",
     alignItems: "center",
-    paddingHorizontal: 16,
+    marginHorizontal: 20,
     gap: 12,
   },
 
   inputContainer: {
-    flex: 1, // takes remaining width
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: "#e8e8e8",
@@ -44,7 +63,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     height: 90,
     top: 40,
-
     columnGap: 20,
   },
 
