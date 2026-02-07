@@ -1,8 +1,8 @@
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import Octicons from "@expo/vector-icons/Octicons";
+import { router } from "expo-router";
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
-
 export default function SignupScreen() {
   return (
     <View>
@@ -58,7 +58,7 @@ export default function SignupScreen() {
           />
         </View>
 
-        <Pressable style={styles.pressable}>
+        <Pressable style={styles.pressable} onPress={() => router.push("/")}>
           <Text style={styles.text1}> Sign Up</Text>
         </Pressable>
       </View>
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#0f172a",
     padding: 20,
     borderRadius: 10,
-    marginTop: 40,
+    marginTop: 90,
     width: "100%",
   },
   text1: {
