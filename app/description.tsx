@@ -87,8 +87,18 @@ export default function Description() {
             borderRadius: 20,
           }}
         >
-          <AntDesign name="message" size={24} color="black" />
-          <Text> Message</Text>
+          <AntDesign
+            name="message"
+            size={24}
+            color="black"
+            style={{ alignSelf: "center" }}
+          />
+          <Text
+            style={{ alignSelf: "center", fontSize: 20, marginHorizontal: 10 }}
+          >
+            {" "}
+            Message
+          </Text>
         </Pressable>
         <Pressable
           style={{
@@ -104,6 +114,7 @@ export default function Description() {
               fontSize: 20,
               fontWeight: "500",
               paddingHorizontal: 20,
+              textAlign: "center",
             }}
           >
             Order Now
