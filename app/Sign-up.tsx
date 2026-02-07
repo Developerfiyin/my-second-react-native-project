@@ -1,4 +1,5 @@
 import Feather from "@expo/vector-icons/Feather";
+import Octicons from "@expo/vector-icons/Octicons";
 import { StyleSheet, TextInput, View } from "react-native";
 
 export default function SignupScreen() {
@@ -13,7 +14,12 @@ export default function SignupScreen() {
 
         <View style={styles.inputContainer}>
           <Feather name="mail" size={30} color="grey" />
-          <TextInput placeholder="Username" style={styles.input} autoFocus />
+          <TextInput placeholder="Email" style={styles.input} autoFocus />
+        </View>
+
+        <View style={styles.inputContainer}>
+          <Octicons name="key" size={30} color="grey" />
+          <TextInput placeholder="Password" style={styles.input} autoFocus />
         </View>
       </View>
     </View>
@@ -36,9 +42,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#e8e8e8",
     borderRadius: 12,
     paddingHorizontal: 12,
-    height: 79,
+    height: 90,
     top: 40,
-    gap: 20,
+
     columnGap: 20,
   },
 
