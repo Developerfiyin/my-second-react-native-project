@@ -8,7 +8,7 @@ export default function Splash() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.replace("/home");
-    }, 2000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
