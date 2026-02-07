@@ -49,7 +49,6 @@ export default function searchInput() {
           <View style={{ flexDirection: "row", gap: 10 }}>
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
-
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
             <Ionicons name="star" size={24} color="gold" />
