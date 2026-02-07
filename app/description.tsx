@@ -1,4 +1,4 @@
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 export default function Description() {
   return (
     <View style={{ flexDirection: "column", gap: "10" }}>
@@ -14,6 +14,18 @@ export default function Description() {
           <View style={styles.dot}></View>
           <View style={styles.dot}></View>
         </View>
+      </View>
+
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          gap: 10,
+          marginHorizontal: 10,
+        }}
+      >
+        <Text style={styles.text}> Terra Former Tractor 2021</Text>
+        <Text style={styles.text}>$240.00</Text>
       </View>
     </View>
   );
@@ -46,5 +58,9 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
+  },
+  text: {
+    fontSize: 18,
+    fontWeight: "500",
   },
 });
