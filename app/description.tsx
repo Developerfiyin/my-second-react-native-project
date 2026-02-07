@@ -38,7 +38,9 @@ export default function Description() {
           marginHorizontal: 10,
         }}
       >
-        <Text style={{ fontFamily: "300" }}> Light Performer Dirt</Text>
+        <Text style={{ fontFamily: "300", marginBottom: 10 }}>
+          Light Performer Dirt
+        </Text>
 
         <View style={{ flexDirection: "row", gap: 10 }}>
           <Ionicons name="star" size={24} color="gold" />
@@ -48,6 +50,28 @@ export default function Description() {
           <Ionicons name="star" size={24} color="gold" />
         </View>
       </View>
+
+      <Text
+        style={{
+          fontSize: 15,
+          padding: 10,
+          backgroundColor: "#d9d9d9",
+          marginRight: "auto",
+          marginLeft: 15,
+          borderRadius: 10,
+          marginBottom: 20,
+        }}
+      >
+        33-INCH Tire
+      </Text>
+      <Text style={styles.text}>Description</Text>
+      <Text style={{ marginHorizontal: 15 }}>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo.
+      </Text>
     </View>
   );
 }
@@ -55,6 +79,7 @@ export default function Description() {
 const styles = StyleSheet.create({
   container: {
     alignItems: "center", // centers dots
+    backgroundColor: "#E9E9E9",
   },
 
   image: {
@@ -64,6 +89,7 @@ const styles = StyleSheet.create({
   dotsContainer: {
     flexDirection: "row",
     marginTop: 8,
+    marginBottom: 10,
     gap: 10,
   },
 
@@ -83,5 +109,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     fontWeight: "500",
+    marginLeft: 10,
+    marginBottom: 25,
   },
 });
