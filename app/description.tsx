@@ -31,17 +31,20 @@ const styles = StyleSheet.create({
   dotsContainer: {
     flexDirection: "row",
     marginTop: 8,
-    gap: 8,
+    gap: 10,
   },
 
   dot: {
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: "red",
+    backgroundColor: "#D9D9D9",
   },
 
   activeDot: {
-    backgroundColor: "#2563EB",
+    backgroundColor: "#0F1729",
+    width: 8,
+    height: 8,
+    borderRadius: 4,
   },
 });
