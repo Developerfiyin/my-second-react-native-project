@@ -1,3 +1,4 @@
+import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import Octicons from "@expo/vector-icons/Octicons";
@@ -62,6 +63,21 @@ export default function SignupScreen() {
           <Text style={styles.text1}> Sign Up</Text>
         </Pressable>
         <Text style={styles.text2}> Or</Text>
+
+        <View>
+          <AntDesign
+            name="google"
+            size={30}
+            color="red"
+            style={{
+              borderWidth: 1,
+              
+              padding: 10,
+              borderRadius: 9,
+              backgroundColor: "none",
+            }}
+          />
+        </View>
       </View>
     </View>
   );
