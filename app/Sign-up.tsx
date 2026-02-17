@@ -5,6 +5,9 @@ import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Octicons from "@expo/vector-icons/Octicons";
 import { router } from "expo-router";
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { Link } from "expo-router";
+
+
 export default function SignupScreen() {
   return (
     <View>
@@ -107,6 +110,12 @@ export default function SignupScreen() {
             />
           </View>
         </View>
+
+ <View>
+  <Text> Don't have an account? </Text>
+  <Link href={"/(tabs)"}>Sign in</Link>
+ </View>
+
       </View>
     </View>
   );
