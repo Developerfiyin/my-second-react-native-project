@@ -1,6 +1,7 @@
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Octicons from "@expo/vector-icons/Octicons";
 import { router } from "expo-router";
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
@@ -94,10 +95,10 @@ export default function SignupScreen() {
           </View>
 
           <View>
-            <AntDesign
-              name="apple"
+            <FontAwesome6
+              name="facebook"
               size={30}
-              color="red"
+              color="blue"
               style={{
                 borderWidth: 1,
                 padding: 10,
@@ -106,7 +107,6 @@ export default function SignupScreen() {
               }}
             />
           </View>
-          
         </View>
       </View>
     </View>
