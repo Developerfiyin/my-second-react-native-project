@@ -64,7 +64,7 @@ export default function SignupScreen() {
         </Pressable>
         <Text style={styles.text2}> Or</Text>
 
-        <View>
+        <View style={{ flexDirection: "row", gap: 15 }}>
           <View>
             <AntDesign
               name="google"
@@ -92,6 +92,21 @@ export default function SignupScreen() {
               }}
             />
           </View>
+
+          <View>
+            <AntDesign
+              name="apple"
+              size={30}
+              color="red"
+              style={{
+                borderWidth: 1,
+                padding: 10,
+                borderRadius: 9,
+                backgroundColor: "none",
+              }}
+            />
+          </View>
+          
         </View>
       </View>
     </View>
