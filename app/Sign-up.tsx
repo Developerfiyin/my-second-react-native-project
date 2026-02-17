@@ -60,6 +60,8 @@ export default function SignupScreen() {
 
         <Pressable style={styles.pressable} onPress={() => router.push("/")}>
           <Text style={styles.text1}> Sign Up</Text>
+
+          <Text style={styles.text2}> Or</Text>
         </Pressable>
       </View>
     </View>
@@ -104,4 +106,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
   },
+
+  text2: {
+    textAlign: "center",
+    borderLeftWidth: 10,
+    borderRightWidth: 10,
+  }
 });
