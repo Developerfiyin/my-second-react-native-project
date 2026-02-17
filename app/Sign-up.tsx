@@ -84,7 +84,6 @@ export default function SignupScreen() {
             <AntDesign
               name="apple"
               size={30}
-              color="red"
               style={{
                 borderWidth: 1,
                 padding: 10,
