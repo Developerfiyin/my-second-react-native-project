@@ -79,8 +79,8 @@ export default function SignupScreen() {
             }}
           />
         </View>
-        
-          </View>
+
+
         <View>
           <AntDesign
             name="google"
@@ -94,6 +94,8 @@ export default function SignupScreen() {
             }}
           />
         </View>
+          </View>
+
       </View>
     </View>
   );
