@@ -108,9 +108,8 @@ const styles = StyleSheet.create({
 
   text2: {
     textAlign: "center",
-
-    borderLeftWidth: 10,
-    borderRightWidth: 10,
-    
+    marginTop: 10,
+    fontSize: 20,
+    fontWeight: "bold",
   },
 });
