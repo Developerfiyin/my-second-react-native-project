@@ -63,7 +63,7 @@ export default function SignupScreen() {
           />
         </View>
 
-        <Pressable style={styles.pressable} onPress={() => router.push("/")}>
+        <Pressable style={styles.pressable} onPress={() => router.push("/(tabs)")}>
           <Text style={styles.text1}> Sign Up</Text>
         </Pressable>
         <Text style={styles.text2}> Or</Text>
@@ -111,9 +111,9 @@ export default function SignupScreen() {
           </View>
         </View>
 
- <View>
+ <View style={{flexDirection: "row", gap: 4}}>
   <Text> Don't have an account? </Text>
-  <Link href={"/(tabs)"}>Sign in</Link>
+  <Link href={"/(tabs)"} style={{color: "blue", }}>Sign in</Link>
  </View>
 
       </View>
